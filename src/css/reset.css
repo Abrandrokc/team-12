@@ -8,6 +8,9 @@ h6,
 p {
   margin: 0;
 }
+body {
+  background-color: #1c1d20;
+}
 
 p:last-child {
   margin-bottom: 0;
@@ -43,11 +46,10 @@ img {
   .section {
     max-width: 768px;
   }
-
-  
 }
 
 @media screen and (min-width: 1280px) {
   .section {
     max-width: 1440px;
-  }}
+  }
+}
