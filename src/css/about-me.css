@@ -1,4 +1,4 @@
-/* ================== STYLES FROM MOBILE ================== */
+/* ================== STYLES FOR MOBILE ================== */
 .about-me {
   padding-top: 64px;
   padding-bottom: 32px;
@@ -32,6 +32,7 @@
   background-color: #242527;
   border-radius: 24px;
   margin-bottom: 16px;
+  box-sizing: border-box;
 }
 .title-text {
   width: 279px;
@@ -98,11 +99,66 @@ svg {
   height: 20px;
   width: 20px;
 }
-/* ================== /STYLES FROM MOBILE ================== */
+/* ================== /STYLES FOR MOBILE ================== */
 
-/* ================== STYLES FROM TABLET ================== */
+/* ================== STYLES FOR TABLET ================== */
 
 @media screen and (min-width: 768px) {
+  .title-with-photo {
+    margin-bottom: 64px;
+  }
+  .title {
+    padding: 64px;
+    height: 700px;
+    max-width: 704px;
+  }
+  .title-text {
+    width: 576px;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+  .info-about-me {
+    width: 704px;
+  }
+  .info-item:first-child .info-item-descr {
+    gap: 16px;
+  }
 }
 
-/* ================== /STYLES FROM TABLET ================== */
+/* ================== /STYLES FOR TABLET ================== */
+
+/* ================== STYLES FOR DESCTOP ================== */
+
+@media screen and (min-width: 1440px) {
+  .title-with-photo {
+    display: flex;
+    margin-bottom: 96px;
+  }
+  .title {
+    max-width: 680px;
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .title-text {
+    width: 576px;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+  .info-about-me {
+    width: 1376px;
+  }
+  .info-item:first-child .info-item-descr {
+    gap: 32px;
+  }
+  .info-item-descr {
+    align-items: end;
+    padding-right: 68px;
+  }
+  .info-item-text {
+    width: 612px;
+  }
+}
+
+/* ================== /STYLES FOR DESCTOP ================== */
