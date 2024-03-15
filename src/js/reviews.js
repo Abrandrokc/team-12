@@ -1,7 +1,7 @@
 import axios from 'axios';
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
-export const reviewWrapper = document.querySelector('.reviews-wrapper');
+export const reviewWrapper = document.querySelector('.reviews-swiper-wrapper');
 
 export async function fetchData() {
     try {
