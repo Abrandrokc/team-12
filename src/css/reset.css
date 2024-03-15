@@ -27,7 +27,9 @@ a {
 button {
   cursor: pointer;
 }
-
+body {
+  background-color: #1C1D20
+}
 img {
   display: block;
   max-width: 100%;
