@@ -6,7 +6,9 @@ axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
 export const reviewWrapper = document.querySelector('.reviews-swiper-wrapper');
 const reviewsSwiper = document.querySelector('.reviews-swiper')
-
+const buttonNext = document.querySelector('.reviews-swiper-button-next')
+const buttonPrev = document.querySelector('.reviews-swiper-button-prev')
+const skrollbar = document.querySelector('.revies-swiper-scrollbar')
 export async function fetchData() {
     try {
         const response = await axios.get('/reviews');
@@ -26,13 +28,23 @@ export async function renderSlide() {
             <p class="review-text">${review}</p>
         </li>`).join('');
 
-      
-        reviewWrapper.insertAdjacentHTML('afterbegin', html)
+        reviewWrapper.innerHTML = html;
 
+        const swiperOptions = {
+            navigation: {
+                nextEl: buttonNext,
+                prevEl: buttonPrev,
+            },
+            scrollbar: {
+                el: skrollbar,
+            },
+            breakpoints: {
+                375: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1440: { slidesPerView: 4 },
+            },
+        };
 
-       
+        new Swiper(reviewsSwiper, swiperOptions);
     }
 }
-
-
-   
