@@ -35,3 +35,15 @@
       font-size: 16px;
       letter-spacing: -0.02em;
 }
+
+.header-order {
+  display: none;
+}
+
+.menu-open {
+  display: none;
+}
+
+.menu-close {
+  display: none;
+}
