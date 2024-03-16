@@ -108,11 +108,11 @@ li.info-item.ac .button-up-down {
   position: absolute;
   top: 0;
   right: 0;
-  transform: rotate(180) scale(1);
+
   transition: transform 250ms linear;
 }
 .button-roll {
-  transform: rotate(90) scale(1);
+  transform: rotateZ(180deg);
 }
 .button-up-down svg {
   height: 20px;
