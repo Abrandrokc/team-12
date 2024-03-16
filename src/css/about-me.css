@@ -55,33 +55,47 @@
   margin-right: auto;
   width: 343px;
 }
-.info-list {
+div.about-me .info-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.info-item {
+ul.info-list .info-item.ac {
+  border: none;
   border-bottom: 1px solid #fafafa33;
   padding-bottom: 20px;
   position: relative;
+  background-color: transparent;
 }
-.info-item-titel {
+.ac .ac-trigger::after {
+  display: none;
+}
+li.info-item.ac .info-item-titel {
   color: #fafafa66;
   font-weight: 600;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.info-item-descr {
+li.info-item.ac .info-item-descr {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.info-item:first-child .info-item-descr {
+.info-item:first-child div.info-item-descr.ac-panel {
   gap: 32px;
 }
+div.info-item-descr.ac-panel .info-item-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  color: #fafafa;
+  padding: 0;
+}
 
-.button-up-down {
+li.info-item.ac .button-up-down {
   background-color: transparent;
   width: 40px;
   height: 40px;
@@ -95,9 +109,12 @@
   top: 0;
   right: 0;
 }
-svg {
+.button-up-down svg {
   height: 20px;
   width: 20px;
+}
+li.info-item.ac .button-up-down:hover {
+  border-color: #fafafa80;
 }
 /* ================== /STYLES FOR MOBILE ================== */
 
@@ -121,7 +138,7 @@ svg {
   .info-about-me {
     width: 704px;
   }
-  .info-item:first-child .info-item-descr {
+  .info-item:first-child div.info-item-descr.ac-panel {
     gap: 16px;
   }
 }
@@ -149,14 +166,14 @@ svg {
   .info-about-me {
     width: 1376px;
   }
-  .info-item:first-child .info-item-descr {
+  .info-item:first-child div.info-item-descr.ac-panel {
     gap: 32px;
   }
-  .info-item-descr {
+  li.info-item.ac .info-item-descr {
     align-items: end;
     padding-right: 68px;
   }
-  .info-item-text {
+  div.info-item-descr.ac-panel .info-item-text {
     width: 612px;
   }
 }
