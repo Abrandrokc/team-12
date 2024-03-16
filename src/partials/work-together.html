@@ -1,4 +1,4 @@
-<section class="section work-together container">
+<section class="section work-together container" id="section-work-together">
   <div class="photo-title">
     <img
       class="photo"
@@ -14,10 +14,23 @@
   <form class="work-form" action="">
     <ul class="form-list">
       <li class="input-list">
-        <input class="form-item" type="email" placeholder="clients@gmail.com" />
+        <input
+          class="form-item"
+          id="mail"
+          type="email"
+          placeholder="clients@gmail.com"
+          required
+        />
       </li>
       <li class="input-list">
-        <input class="form-item" type="text" placeholder="comments" />
+        <input
+          class="form-item"
+          id="comment"
+          type="text"
+          placeholder="comments"
+          required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
       </li>
     </ul>
     <button class="button-send" type="submit">Send</button>
@@ -47,3 +60,4 @@
     </div>
   </div>
 </section>
+<script type="module" src="../js/work-together.js"></script>
