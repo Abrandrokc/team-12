@@ -13,9 +13,9 @@
     />
     
     <script type="module" crossorigin src="/team-12/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/team-12/assets/vendor-95a644a9.js">
-    <link rel="stylesheet" href="/team-12/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/team-12/assets/index-cdb673af.css">
+    <link rel="modulepreload" crossorigin href="/team-12/assets/vendor-897818a0.js">
+    <link rel="stylesheet" href="/team-12/assets/vendor-60200598.css">
+    <link rel="stylesheet" href="/team-12/assets/index-dd31fdf3.css">
   </head>
   <body>
     <header class="section header">
@@ -53,12 +53,287 @@
 
     <section class="section hero"></section>
 
-    <section class="section about-me"></section>
+    <section id="about-me" class="section about-me">
+  <h1 class="visually-hidden">About me</h1>
+  <div class="title-with-photo">
+    <div class="title">
+      <h3 class="title-text">
+        I work with people all over the world to create impressive and
+        <span class="title-func">functional</span>
+        <span class="title-web">websites</span> that reflect each client's
+        unique personality.
+      </h3>
+    </div>
+    <div class="photo">
+      <picture>
+        <source
+          media="(min-width:1440px)"
+          srcset="/team-12/assets/desktop-about-me-image-cf6a5b29.png 1x, /team-12/assets/desktop-about-me-image@2x-e3850a2d.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="/team-12/assets/tablet-about-me-image-6044bbb8.png 1x, /team-12/assets/tablet-about-me-image@2x-ac61f881.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(max-width:767px)"
+          srcset="/team-12/assets/mobile-about-me-image-4794e85d.png 1x, /team-12/assets/mobile-about-me-image@2x-e21abe92.png 2x"
+          type="image/png"
+        />
+        <img
+          class="about-image"
+          src="./img/mobile-about-me-image"
+          alt="mine-photo"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+
+  <div class="info-about-me">
+    <ul class="info-list">
+      <li class="ac info-item">
+        <h3 class="ac-header info-item-titel">About me</h3>
+
+        <button class="ac-trigger button-up-down button-roll" type="button">
+          <svg>
+            <use
+              href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"
+              width="20"
+              height="20"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="ac-panel info-item-descr">
+          <p class="ac-text info-item-text">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p class="ac-text info-item-text">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac info-item">
+        <h3 class="ac-header info-item-titel">Role</h3>
+
+        <button class="ac-trigger button-up-down" type="button">
+          <svg>
+            <use
+              href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"
+              width="20"
+              height="20"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="ac-panel info-item-descr">
+          <p class="ac-text info-item-text">Frontend development</p>
+          <p class="ac-text info-item-text">HeadlessCMS,Wordpress</p>
+          <p class="ac-text info-item-text">Blender(enjoy)</p>
+        </div>
+      </li>
+
+      <li class="ac info-item">
+        <h3 class="ac-header info-item-titel">Education</h3>
+
+        <button class="ac-trigger button-up-down" type="button">
+          <svg>
+            <use
+              href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"
+              width="20"
+              height="20"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="ac-panel info-item-descr">
+          <p class="ac-text info-item-text">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </p>
+          <p class="ac-text info-item-text">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </p>
+          <p class="ac-text info-item-text">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
     <section class="section benefits"></section>
 
     <section class="section projects"></section>
-    <section class="section faq"></section>
+    <section class="faq-section section" id="FAQ">
+  <div class="container-faq">
+    <h2 class="faq-title">FAQ</h2>
+    <ul class="faq-list accordion-container">
+      <li class="faq-item">
+        <div class="faq-item-container">
+          <h3 class="faq-item-title">
+            What programming languages are most often used in your project?
+          </h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-item-container">
+          <h3 class="faq-item-title">
+            What are the deadlines for the project?
+          </h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-item-container">
+          <h3 class="faq-item-title">What payment methods do you accept?</h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-item-container">
+          <h3 class="faq-item-title">How can I contact you?</h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-item-container">
+          <h3 class="faq-item-title">Do you provide advice or support?</h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-item-container">
+          <h3 class="faq-item-title">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/team-12/assets/sprite-8e8ea727.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
     <section class="section covers"></section>
 
@@ -81,7 +356,70 @@
   </div>
 </section>
 
-    <section class="section work-together"></section>
+    <section class="section work-together container" id="section-work-together">
+  <div class="photo-title">
+    <img
+      class="photo"
+      src="../img/logo@3x.png"
+      width="44"
+      height="44"
+      alt="logo-photo"
+    />
+    <h2 class="title">Let&apos;s <span class="accent-text">work</span></h2>
+  </div>
+  <h2 class="title">together</h2>
+
+  <form class="work-form" action="">
+    <ul class="form-list">
+      <li class="input-list">
+        <input
+          class="form-item"
+          id="mail"
+          type="email"
+          placeholder="clients@gmail.com"
+          required
+        />
+        <span class="error-message" id="email-error"></span>
+      </li>
+
+      <li class="input-list">
+        <input
+          class="form-item"
+          id="comment"
+          type="text"
+          placeholder="comments"
+          required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
+      </li>
+    </ul>
+    <button class="button-send" type="submit">Send</button>
+  </form>
+  <nav>
+    <ul class="navigation">
+      <li class="nav-item email">
+        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+      </li>
+      <li class="nav-item phone">
+        <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="backdrope">
+    <div class="modal-window-work">
+      <button class="button-close" type="button">
+        <svg class="icon-close" width="22" heigth="22">
+          <use href="../img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+      <p class="modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</section>
 
     
     
