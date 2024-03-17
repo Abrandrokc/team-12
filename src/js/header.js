@@ -1,29 +1,45 @@
-const menuBtn = document.querySelector('.header-nav__menu');
-const openMenuBtn = document.querySelector('.menu-open');
-const closeMenuBtn = document.querySelector('.menu-close');
-const menuList = document.querySelector('.header-list');
+const mobMenuItems = document.querySelectorAll('.header-list .header-link');
+const menuOpenBtn = document.querySelector('.menu-open');
+const menuCloseBtn = document.querySelector('.menu-close');
+const mobMenuContainer = document.querySelector('.header-mob__menu');
+const orderBtn = document.querySelector('.header-order');
+const headerMenuBtn = document.querySelector('.header-nav__menu');
+const headerList = document.querySelector('.header-list');
+
+export function createMarkup() {
+  const items = [...mobMenuItems];
+  const mobMenuListHTML = `
+       <ul class="mob-menu__list">
+      ${items
+        .map(
+          item =>
+            `<li class="mob-menu__item"><a class="mob-menu__link" href="${item.href}">${item.textContent}</a></li>`
+        )
+        .join('')}
+    </ul>
+  `;
+
+  mobMenuContainer.innerHTML = mobMenuListHTML;
+}
 
 export function openMenu() {
-  openMenuBtn.classList.add('is-hidden');
-  closeMenuBtn.classList.remove('is-hidden');
-  menuList.classList.remove('is-hidden');
+  menuOpenBtn.classList.add('is-hidden');
+  menuCloseBtn.classList.remove('is-hidden');
+  createMarkup();
+  mobMenuContainer.classList.remove('is-hidden');
+  orderBtn.style.display = 'block';
 }
 
 export function closeMenu() {
-  openMenuBtn.classList.remove('is-hidden');
-  closeMenuBtn.classList.add('is-hidden');
-  menuList.classList.add('is-hidden');
+  mobMenuContainer.classList.add('is-hidden');
+  menuOpenBtn.classList.remove('is-hidden');
+  menuCloseBtn.classList.add('is-hidden');
+  orderBtn.style.display = 'none';
 }
 
-export function closeMenuClick(event) {
-  const target = event.target;
-  if (target.tagName === 'A') {
-    closeMenu();
-  }
-}
+menuOpenBtn.addEventListener('click', openMenu);
+menuCloseBtn.addEventListener('click', closeMenu);
 
-openMenuBtn.addEventListener('click', openMenu);
-
-closeMenuBtn.addEventListener('click', closeMenu);
-
-menuList.addEventListener('click', closeMenuClick);
+headerMenuBtn.addEventListener('click', event => {
+  headerList.classList.toggle('is-hidden');
+});
