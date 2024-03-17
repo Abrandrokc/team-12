@@ -62,7 +62,7 @@ form.addEventListener("submit", async event => {
     formComment.value = '';
    errorMessage.textContent = '';
     errorMessage.style.display = 'none'; 
-});
+
 
 async function sendDataToServer() {
     const formData = new FormData(form);
@@ -89,7 +89,8 @@ async function sendDataToServer() {
     } catch (error) {
         console.error('Error:', error);
     }
-}
+    }
+    });
 backdrope.addEventListener('click', function(event) {
     if (event.target === backdrope) {
         backdrope.classList.remove('is-open');
