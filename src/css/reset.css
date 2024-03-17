@@ -1,4 +1,5 @@
 /* Reset styles */
+
 h1,
 h2,
 h3,
@@ -43,11 +44,10 @@ img {
   .section {
     max-width: 768px;
   }
-
-  
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .section {
     max-width: 1440px;
-  }}
+  }
+}
