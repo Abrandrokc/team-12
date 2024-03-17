@@ -1,6 +1,6 @@
 <header class="section header">
   <div class="header-container">
-    <nav class="header-nav">
+    <div class="header-logo__container">
       <picture>
         <source
           srcset="./img/logo.png, ./img/logo@2x.png 2x, ./img/logo@3x.png 3x"
@@ -21,10 +21,11 @@
           height="80"
         />
       </picture>
-      <!-- <picture></picture> -->
-      <svg class="header-logo__svg" width="19" height="16">
-        <use href="../img/J_.svg"></use>
-      </svg>
+
+      <p class="header-logo__text">jefferson*</p>
+    </div>
+
+    <nav class="header-nav">
       <button class="header-nav__menu" type="button">Menu</button>
       <ul class="header-list is-hidden">
         <li header-items>
@@ -45,9 +46,8 @@
       </button>
     </nav>
     <button class="menu-open" type="button">
-      O
       <svg class="menu-open__svg" width="28" height="28">
-        <use href="../img/J_.svg#icon-x"></use>
+        <use href="../img/sprite.svg#icon-menu"></use>
       </svg>
     </button>
     <button class="menu-close" type="button">X</button>
