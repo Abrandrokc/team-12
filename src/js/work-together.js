@@ -27,14 +27,27 @@ formEmail.addEventListener('input', function(event)  {
         errorMessage.classList.remove('success-input');
         errorMessage.classList.add('error-input');
         errorMessage.textContent = 'Invalid email, try again';
-        errorMessage.style.display = 'block';
+         errorMessage.style.display = 'block';
+           setErrorStyle(formEmail); 
     } else {
         errorMessage.classList.remove('error-input');
         errorMessage.classList.add('success-input');
         errorMessage.textContent = 'Succes!';
-        errorMessage.style.display = 'block';
+         errorMessage.style.display = 'block';
+           setSuccessStyle(formEmail); 
     }
+    function setSuccessStyle(formEmail) {
+    formEmail.classList.remove('error'); 
+        formEmail.classList.add('success'); 
+}
+
+function setErrorStyle(formEmail) {
+    formEmail.classList.remove('success');
+    formEmail.classList.add('error');
+}
+
 });
+
 
 formComment.addEventListener('input', function (event) {
    inputComment = event.target.value;
@@ -62,6 +75,8 @@ form.addEventListener("submit", async event => {
     formComment.value = '';
    errorMessage.textContent = '';
     errorMessage.style.display = 'none'; 
+    formEmail.classList.remove('success');
+      formEmail.classList.remove('error');
 
 
 async function sendDataToServer() {

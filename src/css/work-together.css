@@ -78,8 +78,15 @@
     letter-spacing: -0.02em;
     text-align: left;
   }
+
   .form-item:focus {
     border-bottom: 1px solid #fafafa;
+  }
+  .success {
+    border-bottom: 1px solid #3cbc81;
+  }
+  .error {
+    border-bottom: 1px solid #e74a3b;
   }
   .form-item::placeholder {
     font-family: Inter Tight;
