@@ -2,12 +2,13 @@
     width: 48px;
     height: 48px;
 }
-.reviews-wrapper {
+.reviews-swiper-buttons{
+    position: relative;
     display: flex;
-    justify-content: center;
-gap: 16px;
+    gap: 16px;
+    padding-top: 35px;
     align-items: center;
-
+    justify-content: center;
 }
 
 .review-author{
