@@ -2,9 +2,6 @@
 
 
 
-
-
-
 import axios from 'axios';
 import { renderSlide,  } from './js/reviews';
 import Swiper from 'swiper';
@@ -41,3 +38,30 @@ import { escapeClose} from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
 
+
+
+const element = document.getElementById('your-element-id');
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+if (isElementInViewport(element)) {
+    console.log('Елемент видимий в вьюпорті');
+} else {
+    console.log('Елемент не видимий в вьюпорті');
+}
+
+window.visualViewport.addEventListener('scroll', function () {
+    if (isElementInViewport(element)) {
+        console.log('Елемент видимий в вьюпорті');
+    } else {
+        console.log('Елемент не видимий в вьюпорті');
+    }
+});
