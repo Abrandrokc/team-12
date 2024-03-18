@@ -4,6 +4,7 @@
 
 
 
+
 import axios from 'axios';
 import { renderSlide,  } from './js/reviews';
 import Swiper from 'swiper';
@@ -39,3 +40,4 @@ backdrope.addEventListener('click', backdropeClose);
 import { escapeClose} from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
+
