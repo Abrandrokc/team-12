@@ -7,9 +7,10 @@ import { renderSlide,  } from './js/reviews';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import itemsAccordion from './js/aboutme';
+import SHOWACC from './js/FAQ';
 itemsAccordion;
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
-
+SHOWACC
 
 renderSlide(); 
   
