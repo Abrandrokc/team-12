@@ -1,1 +1,64 @@
-<section clas="section work-together"></section>
+<section class="section work-together container" id="section-work-together">
+  <div class="photo-title">
+    <img
+      class="photo"
+      src="../img/logo@3x.png"
+      width="44"
+      height="44"
+      alt="logo-photo"
+    />
+    <h2 class="title">Let&apos;s <span class="accent-text">work</span></h2>
+  </div>
+  <h2 class="title">together</h2>
+
+  <form class="work-form" action="">
+    <ul class="form-list">
+      <li class="input-list">
+        <input
+          class="form-item"
+          id="mail"
+          type="email"
+          placeholder="clients@gmail.com"
+          required
+        />
+        <span class="error-message" id="email-error"></span>
+      </li>
+
+      <li class="input-list">
+        <input
+          class="form-item"
+          id="comment"
+          type="text"
+          placeholder="comments"
+          required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        />
+      </li>
+    </ul>
+    <button class="button-send" type="submit">Send</button>
+  </form>
+  <nav>
+    <ul class="navigation">
+      <li class="nav-item email">
+        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+      </li>
+      <li class="nav-item phone">
+        <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="backdrope">
+    <div class="modal-window-work">
+      <button class="button-close" type="button">
+        <svg class="icon-close" width="22" heigth="22">
+          <use href="../img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+      <p class="modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</section>
