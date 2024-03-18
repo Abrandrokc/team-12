@@ -52,16 +52,4 @@ function isElementInViewport(el) {
     );
 }
 
-if (isElementInViewport(element)) {
-    console.log('Елемент видимий в вьюпорті');
-} else {
-    console.log('Елемент не видимий в вьюпорті');
-}
 
-window.visualViewport.addEventListener('scroll', function () {
-    if (isElementInViewport(element)) {
-        console.log('Елемент видимий в вьюпорті');
-    } else {
-        console.log('Елемент не видимий в вьюпорті');
-    }
-});
