@@ -1,11 +1,12 @@
 
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 function itemsAccordion() {
   const buttonAccordion = document.querySelector('.button-up-down');
 
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+
 
 // import 'swiper/css';
 // import 'swiper/css/navigation';
