@@ -24,7 +24,6 @@ export function openMenu() {
   menuCloseBtn.classList.remove('is-hidden');
   mobMenuContainer.classList.add('is-open');
   createMarkup();
-  orderBtn.style.display = 'block';
 }
 
 export function closeMenu() {
