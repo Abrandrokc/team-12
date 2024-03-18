@@ -1,12 +1,9 @@
 
-// import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
-
-
-
 import axios from 'axios';
 import { renderSlide,  } from './js/reviews';
 import Swiper from 'swiper';
+import { Navigation, Keyboard } from 'swiper/modules';
+import { projectsSwiper } from './js/projects'
 import 'swiper/swiper-bundle.css';
 import itemsAccordion from './js/aboutme';
 import Accordion from 'accordion-js';
@@ -18,4 +15,10 @@ const SHOWACC = new Accordion('.accordion-container', {
     showMultiple: true,
 });
 export default SHOWACC;
+projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
+  if (keyCode === 9) {
+    projectsSwiper.slideNext();
+  }
+});
+
 
