@@ -1,4 +1,4 @@
-.container {
+.container-work {
   width: 320px;
   padding: 0 16px;
   margin: 0 auto;
@@ -28,7 +28,7 @@
     width: 44px;
     height: 44px;
   }
-  .title {
+  .title-work {
     font-size: 40px;
     font-weight: 500;
     line-height: 40px;
@@ -228,7 +228,7 @@
 
 /* Styles for tablet */
 @media screen and (min-width: 768px) {
-  .container {
+  .container-work {
     width: 768px;
     margin: 0 auto;
   }
@@ -245,7 +245,7 @@
     width: 70px;
     height: 70px;
   }
-  .title {
+  .title-work {
     text-align: left;
     font-size: 64px;
     line-height: 64px;
@@ -301,7 +301,7 @@
 
 /* Styles for desctop */
 @media screen and (min-width: 1158px) {
-  .container {
+  .container-work {
     width: 1158px;
     margin: 0 auto;
   }
