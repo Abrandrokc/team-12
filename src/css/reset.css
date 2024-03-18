@@ -11,6 +11,16 @@ h6,
 p {
   margin: 0;
 }
+body {
+  background-color: #1c1d20;
+  font-family: Inter Tight, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  color: #fafafa;
+  min-height: 100vh;
+}
 
 p:last-child {
   margin-bottom: 0;
@@ -36,22 +46,22 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-@media screen and (min-width: 375px) {
-  .section {
-    max-width: 375px;
-  }
+.section {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
 }
 
 @media screen and (min-width: 768px) {
   .section {
     max-width: 768px;
+    padding: 0 32px;
   }
-
-  
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .section {
     max-width: 1440px;
-  }}
+  }
+}
