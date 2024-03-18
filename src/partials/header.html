@@ -1,8 +1,31 @@
 <header class="section header">
   <div class="header-container">
-    <nav class="header-nav">
-      <img class="header-logo" src="../img/image.png" alt="Man with glasses" />
+    <div class="header-logo__container">
+      <picture>
+        <source
+          srcset="./img/logo.png, ./img/logo@2x.png 2x, ./img/logo@3x.png 3x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./img/image.png, ./img/image@2x.png 2x, ./img/image@3x.png 3x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./img/mobile-image@2x.png 2x, ./img/mobile-image@3x.png 3x"
+          media="(min-width: 375px)"
+        />
+        <img
+          src="./img/mobile-image.png"
+          alt="Хлопець в окулярах"
+          width="80"
+          height="80"
+        />
+      </picture>
 
+      <p class="header-logo__text">jefferson*</p>
+    </div>
+
+    <nav class="header-nav">
       <button class="header-nav__menu" type="button">Menu</button>
       <ul class="header-list is-hidden">
         <li header-items>
@@ -16,17 +39,22 @@
         </li>
         <li header-items><a class="header-link" href="./FAQ.html">FAQ</a></li>
       </ul>
-      <button class="header-order" type="button">
-        <a class="header-order__link" href="./work-together.html"
-          >Order the project</a
-        >
-      </button>
     </nav>
+    <button class="header-order" type="button">
+      <a class="header-order__link" href="./work-together.html"
+        >Order the project</a
+      >
+    </button>
     <button class="menu-open" type="button">
       <svg class="menu-open__svg" width="28" height="28">
-        <use href="../img/J_.svg#icon-x"></use>
+        <use href="../img/sprite.svg#icon-menu"></use>
       </svg>
     </button>
-    <button class="menu-close" type="button"></button>
+    <button class="menu-close is-hidden" type="button">
+      <svg class="menu-close__svg" width="16" height="16">
+        <use href="../img/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
   </div>
+  <div class="header-mob__menu is-hidden"></div>
 </header>
