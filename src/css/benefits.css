@@ -63,3 +63,22 @@ body {
   background-color: #242527;
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+  .section-benefits {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 96px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+  .benefits-item {
+    max-width: 704px;
+    flex-basis: calc ((100%-16px) / 2);
+  }
+}
