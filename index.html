@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/team-12/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/team-12/assets/vendor-99dd5705.js">
     <link rel="stylesheet" href="/team-12/assets/vendor-91413512.css">
-    <link rel="stylesheet" href="/team-12/assets/index-505d228f.css">
+    <link rel="stylesheet" href="/team-12/assets/index-de580957.css">
   </head>
   <body>
     <header class="section header">
@@ -46,19 +46,21 @@
     </div>
 
     <nav class="header-nav">
-      <button class="header-nav__menu" type="button">Menu</button>
-      <ul class="header-list is-hidden">
-        <li header-items>
-          <a class="header-link" href="./about-me.html">About me</a>
-        </li>
-        <li header-items>
-          <a class="header-link" href="./benefits.html">Benefits</a>
-        </li>
-        <li header-items>
-          <a class="header-link" href="./projects.html">Projects</a>
-        </li>
-        <li header-items><a class="header-link" href="./FAQ.html">FAQ</a></li>
-      </ul>
+      <div class="header-nav__wrap">
+        <button class="header-nav__menu" type="button">Menu</button>
+        <ul class="header-list is-hidden">
+          <li header-items>
+            <a class="header-link" href="./about-me.html">About me</a>
+          </li>
+          <li header-items>
+            <a class="header-link" href="./benefits.html">Benefits</a>
+          </li>
+          <li header-items>
+            <a class="header-link" href="./projects.html">Projects</a>
+          </li>
+          <li header-items><a class="header-link" href="./FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
     </nav>
     <button class="header-order" type="button">
       <a class="header-order__link" href="./work-together.html"
@@ -70,13 +72,18 @@
         <use href="../img/sprite.svg#icon-menu"></use>
       </svg>
     </button>
-    <button class="menu-close is-hidden" type="button">
+  </div>
+  <div class="mobile-menu">
+    <button class="menu-close" type="button">
       <svg class="menu-close__svg" width="16" height="16">
         <use href="../img/sprite.svg#icon-x"></use>
       </svg>
     </button>
+    <div class="markup"></div>
+    <button class="mobile-btn" type="button">
+      <a class="mobile-link" href="./work-together.html">Order the project</a>
+    </button>
   </div>
-  <div class="header-mob__menu is-hidden"></div>
 </header>
 
     
