@@ -1,85 +1,193 @@
-/* @media screen and (min-width: 375px) {
-}
-@media screen and (min-width: 768px) {
+  /* MOBILE */
+
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
-@media screen and (min-width: 1280px) {
-} */
 
-.header {
-  position: relative;
-}
+  @media screen and (min-width: 375px) {
+    .section {
+      max-width: 375px;
+    }
+    
+    .header {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      width: 100%;
+      background-color: transparent;
+      z-index: 1000px;
+    }
 
-
-.header-container {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  display: flex;
+  .header-container {display: flex;
   justify-content: space-between;
-  background-color: transparent;
-}
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 
-.is-hidden {
-  display: none;
-}
-
-
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-nav__menu {
-
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+  }
+  .header-logo__container {
+    display: flex;
+  }
+  .header-logo__text {
+    display: block;
+    width: 84px;
+    height: 19px;
+    margin-left: 10px;
     color: #FAFAFA;
-    background-color: transparent;
+    font-family: 'Inter Tight', 'san-serif';
+  }
+
+  .header-nav__menu {
+    display: none;
+  }
+
+  .header-order{
+    display: none;
+  }
+
+  .menu-open {
     border: none;
-}
+    background-color: transparent;
+  }
 
-.header-link{
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #FAFAFA;
-}
+  }
 
 
 
-.header-order {
-display: none;
+  /* TABLET */
+  @media screen and (min-width: 768px) {
+    .section {
+      max-width: 768px;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
 
-@media screen and (min-width: 768px) {
-  display: block;
-  border-radius: 60px;
-    padding: 18px 24px;
-    width: 163px;
-    height: 55px
-}
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-nav__menu{
+      display: block;
+      padding: 10px;
+  width: 60px;
+    height: 39px;
+        
+          background-color: transparent;
+          border: none;
+          color: #FAFAFA;
+    }
+
   
+
+    .header-order {
+      display: block;
+      border-radius: 60px;
+      border: none;
+        padding: 18px 24px;
+        width: 163px;
+        height: 55px;
+        
+          background-color: #ED3B44;
+          
+    }
+
+      .header-order__link {
+        font-family: 'Inter Tight',
+          'san-serif';
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #FAFAFA;
+      }
+
+    .menu-open{
+      display: none;
+      visibility: 0;
+    }
+
+
+  }
+
+    /* DESKTOP */
+  @media screen and (min-width: 1440px) {
+    .section {
+      max-width: 1440px;
+    }
+
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  }
+
+
+ .menu-close {
+   background-color: transparent;
+   border: none;
+   z-index: 2;
+   position: absolute;
+   top: 0;
+   right: 10;
+
+ }
+
+.header-mob__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
 }
 
 
-  
 
-.menu-open {
-display: block;
-background-color: transparent;
-width: 28px;
-height: 28px;
+.mob-menu__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.menu-open__svg {
-  background-color: transparent;
+.mob-menu__link {
+    font-family: 'Inter Tight',
+        'san-serif';
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #FAFAFA;
+}
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.menu-close {
-  display: none;
-}
+    .header-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+        .header-items:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        .header-link{
+font-family: 'Inter Tight',
+  'san-serif';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #FAFAFA;;
+  }
