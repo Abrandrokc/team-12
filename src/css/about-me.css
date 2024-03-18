@@ -118,8 +118,31 @@ li.info-item.ac .button-up-down {
   height: 20px;
   width: 20px;
 }
-li.info-item.ac .button-up-down:hover {
-  border-color: #fafafa80;
+
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  padding: 10px;
+  display: flex;
+}
+
+.about-me-slide {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fafafa;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: #242527;
+  justify-content: center;
+  align-items: center;
+
 }
 /* ================== /STYLES FOR MOBILE ================== */
 
@@ -146,9 +169,15 @@ li.info-item.ac .button-up-down:hover {
   .info-item:first-child div.info-item-descr.ac-panel {
     gap: 16px;
   }
+  .swiper-slide {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    width: 130px;
+    height: 130px;
+  }
 }
 
-/* ================== /STYLES FOR TABLET ================== */
 
 /* ================== STYLES FOR DESCTOP ================== */
 
