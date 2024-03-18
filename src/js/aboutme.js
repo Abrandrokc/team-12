@@ -8,8 +8,7 @@ function itemsAccordion() {
 
 
 
-// import 'swiper/css';
-// import 'swiper/css/navigation';
+
 
 
 

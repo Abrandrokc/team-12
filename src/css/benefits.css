@@ -1,6 +1,4 @@
-body {
-  margin: 0px;
-}
+
 .section-benefits {
   background-color: #242527;
   padding-left: 16px;
@@ -64,9 +62,7 @@ body {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .section {
-    max-width: 768px;
-  }
+  
   .section-benefits {
     padding-left: 32px;
     padding-right: 32px;

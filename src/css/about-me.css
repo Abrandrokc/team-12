@@ -130,7 +130,7 @@ li.info-item.ac .button-up-down {
   display: flex;
 }
 
-.swiper-slide {
+.about-me-slide {
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -178,7 +178,6 @@ li.info-item.ac .button-up-down {
   }
 }
 
-/* ================== /STYLES FOR TABLET ================== */
 
 /* ================== STYLES FOR DESCTOP ================== */
 

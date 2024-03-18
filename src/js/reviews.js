@@ -1,6 +1,9 @@
 import axios from 'axios';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation } from 'swiper/modules';
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -30,6 +33,8 @@ export async function renderSlide() {
         reviewWrapper.insertAdjacentHTML('afterbegin', html)
 
         const swiperOptions = {
+            modules: [Navigation],
+           
             slidesPerView: 1,
               spaceBetween: 10,
             navigation: {
@@ -44,16 +49,11 @@ export async function renderSlide() {
                 768: { slidesPerView: 2 },
                 1440: { slidesPerView: 4 },
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true, 
-            },
+           
             hashNavigation: {
                 watchState: true,
             },
-            autoplay: {
-                delay: 6000,
-            },
+            
            
                 
             
