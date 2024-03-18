@@ -2,16 +2,14 @@
   width: 320px;
   padding: 0 16px;
   margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* Styles for mobile */
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2),
   (min-width: 375px) {
-  .section-work {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
   .work-together {
     background-color: #1c1d20;
   }
@@ -233,10 +231,9 @@
   .container-work {
     width: 768px;
     margin: 0 auto;
-  }
-  .section-work {
     padding-bottom: 169px;
   }
+
   .photo-title {
     gap: 20px;
     margin-bottom: 10px;
@@ -306,11 +303,10 @@
   .container-work {
     width: 1158px;
     margin: 0 auto;
-  }
-  .section-work {
     padding-left: 196px;
     padding-right: 196px;
   }
+
   .form-item {
     width: 390px;
     height: 44px;
