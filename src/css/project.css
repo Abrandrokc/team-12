@@ -32,11 +32,11 @@ body {
   margin-bottom: 32px;
 }
 
-.swiper-container {
+.projects-swiper-container.swiper-container {
   overflow: hidden;
 }
 
-.swiper-wrapper {
+.projects-list.swiper-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -113,7 +113,7 @@ body {
   margin: 0 auto;
 }
 
-.swiper-buttons-container {
+.projects-swiper-buttons-container.swiper-buttons-container {
   display: flex;
   gap: 12px;
   margin-top: 32px;
@@ -122,11 +122,11 @@ body {
   width: 116px;
 }
 
-.swiper-button-prev {
+.projects-swiper-button-prev.swiper-button-prev {
   transform: rotate(180deg);
 }
 
-.swiper-button {
+.projects-swiper-button-prev.swiper-button, .projects-swiper-button-next.swiper-button {
   width: 24px;
   height: 24px;
   padding: 14px;
@@ -135,7 +135,7 @@ body {
   border-radius: 50%;
 }
 
-.swiper-button-disabled {
+.projects-swiper-button-prev.swiper-button-disabled, .projects-swiper-button-next.swiper-button-disabled {
   stroke: #3B3B3B;
   border-color: rgba(250, 250, 250, 0.2);
 }
@@ -182,21 +182,21 @@ body {
     padding: 18px 50px;
   }
 
-  .swiper-wrapper {
+  .projects-list.swiper-wrapper {
     max-width: 704px;
   }
 
-  .swiper-buttons-container {
+  .projects-swiper-buttons-container.swiper-buttons-container {
     width: 156px;
   }
 
-  .swiper-button {
+  .projects-swiper-button-prev.swiper-button, .projects-swiper-button-next.swiper-button {
     width: 32px;
     height: 32px;
     padding: 18px;
   }
 
-  .swiper-button-svg {
+  .projects-swiper-button-prev .swiper-button-svg, .projects-swiper-button-next .swiper-button-svg{
     width: 32px;
     height: 32px;
   }
@@ -227,7 +227,7 @@ body {
     padding-right: 130px;
   }
 
-  .swiper-wrapper {
+  .projects-list.swiper-wrapper {
     max-width: 1376px;
   }
 }

@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 
-export const projectsSwiper = new Swiper('.swiper-container', {
+export const projectsSwiper = new Swiper('.projects-swiper-container', {
   modules: [Navigation, Keyboard],
   slidesPerView: 1,
   spaceBetween: 30,
