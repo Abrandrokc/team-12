@@ -3,7 +3,7 @@ import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation,Keyboard,Pagination } from 'swiper/modules';
+import { Navigation,Keyboard } from 'swiper/modules';
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -33,7 +33,7 @@ export async function renderSlide() {
         reviewWrapper.insertAdjacentHTML('afterbegin', html)
 
         const swiperOptions = {
-            modules: [Navigation, Keyboard, Pagination],
+            modules: [Navigation, Keyboard ],
         initialSlide:0,
             slidesPerView: 1,
               spaceBetween: 10,
@@ -57,10 +57,7 @@ export async function renderSlide() {
     enabled: true,
     onlyInViewport: true,
   },
-          pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      }, 
+         
                 
             
         };
