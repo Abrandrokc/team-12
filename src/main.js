@@ -41,6 +41,7 @@ import { escapeClose } from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
 
+
 // HEADER JS
 import {
   menuOpenBtn,
@@ -62,10 +63,14 @@ headerMenuBtn.addEventListener('click', event => {
   headerList.style.opacity = 1;
 });
 
+// Js code for section "Covers"
+
+
 mobOrderBtn.addEventListener('click', event => {
   closeMenu();
 });
 
+feature/reviews-header
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -115,3 +120,9 @@ window.visualViewport.addEventListener('scroll', function () {
     console.log('Елемент не видимий в вьюпорті');
   }
 });
+
+import { isElementInViewport, addKeyframesAnimation } from './js/covers'
+const element = document.querySelector('.covers');
+let isAnimationAdded = false;
+
+

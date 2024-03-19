@@ -40,6 +40,7 @@ export async function renderSlide() {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+                onlyInViewport: true,
             },
             scrollbar: {
                 el: '.swiper-scrollbar',
@@ -52,13 +53,15 @@ export async function renderSlide() {
            
             hashNavigation: {
                 watchState: true,
+                onlyInViewport: true,
             },
             keyboard: {
                 enabled: true,
                 onlyInViewport: true,
             },
            mousewheel: {
-    invert: true,
+               invert: true,
+               onlyInViewport: true,
   },
             
         };

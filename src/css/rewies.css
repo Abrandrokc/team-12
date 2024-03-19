@@ -54,6 +54,7 @@
 }
 .review-slide{
     border: 1px solid #FAFAFA33;
+    border-radius: 20px;
     width: 332px; 
     height: 302px; 
     

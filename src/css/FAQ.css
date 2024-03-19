@@ -1,4 +1,3 @@
-
 .faq-headline {
   margin-bottom: 32px;
   font-weight: 600;
@@ -56,12 +55,18 @@
 }
 
 #FAQ .faq-arrow-btn {
-  margin-left: 5px;
   background-color: transparent;
   border: 1px solid rgba(250, 250, 250, 0.2);
-   height: 34px;
-   border-radius: 50%;
-   width: 20px;
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+}
+
+#FAQ .ac-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 #FAQ .faq-arrow-btn.ac-trigger::after {
@@ -77,9 +82,10 @@
   padding-bottom: 0;
   padding-left: 0;
 }
-.faq-arrow-icon{
+.faq-arrow-icon {
   stroke: #fafafa;
 }
+
 /* =============== TABLET ===============*/
 
 @media screen and (min-width: 768px) {

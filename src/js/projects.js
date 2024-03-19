@@ -16,6 +16,7 @@ export const projectsSwiper = new Swiper('.projects-swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+    onlyInViewport: true,
   },
   keyboard: {
     enabled: true,
@@ -23,5 +24,6 @@ export const projectsSwiper = new Swiper('.projects-swiper-container', {
   },
   mousewheel: {
     invert: true,
+    onlyInViewport: true,
   },
 });
