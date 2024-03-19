@@ -1,10 +1,16 @@
 import axios from 'axios';
 import { renderSlide } from './js/reviews';
 import Swiper from 'swiper';
+import { Navigation, Keyboard } from 'swiper/modules';
+import { projectsSwiper } from './js/projects';
 import 'swiper/swiper-bundle.css';
-import { itemsAccordion, addAboutMeSwiper } from './js/aboutme';
+import { itemsAccordion } from './js/aboutme';
+import { addAboutMeSwiper } from './js/aboutme';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 import SHOWACC from './js/FAQ';
-itemsAccordion;
+
+itemsAccordion();
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 SHOWACC;
 addAboutMeSwiper();
@@ -34,3 +40,49 @@ backdrope.addEventListener('click', backdropeClose);
 import { escapeClose } from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
+
+
+
+
+const element = document.querySelector('.covers');
+
+projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
+  if (keyCode === 9) {
+    projectsSwiper.slideNext();
+  }
+});
+
+
+
+
+// if (isElementInViewport(element)) {
+//     console.log('Елемент видимий в вьюпорті');
+// } else {
+//     console.log('Елемент не видимий в вьюпорті');
+// }
+
+console.log(CSS)
+
+window.visualViewport.addEventListener('scroll', function () {
+    if (isElementInViewport(element)) {
+        console.log('Елемент видимий в вьюпорті');
+        // element.animate(
+        // [
+        //     {
+        //     // from
+        //     opacity: 0,
+        //     color: "#fff",
+        //     },
+        //     {
+        //     // to
+        //     opacity: 1,
+        //     color: "#000",
+        //     },
+        // ],
+        // 2000,
+        // );
+    } else {
+        console.log('Елемент не видимий в вьюпорті');
+    }
+});
+
