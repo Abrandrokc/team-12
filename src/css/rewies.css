@@ -17,6 +17,7 @@
     width: 48px;
     height: 48px;
     padding-top: 32px;
+    padding-left: 32px;
 }
 .reviews-swiper-buttons{
     position: relative;
@@ -35,6 +36,8 @@
         text-align: left;
         color: #FAFAFA;
         padding-top: 32px;
+        width: 284px;
+        padding-left: 32px;
 }
 .review-text{
     color: #FAFAFA99;
@@ -47,10 +50,11 @@
          height: 100%;
         padding-top: 8px;
         padding-bottom: 32px;
+        padding-left: 32px;
 }
 .review-slide{
     border: 1px solid #FAFAFA33;
-    width: 344px; 
+    width: 332px; 
     height: 302px; 
     
 }

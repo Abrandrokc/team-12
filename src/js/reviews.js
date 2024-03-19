@@ -36,7 +36,7 @@ export async function renderSlide() {
             modules: [Navigation, Keyboard, Mousewheel],
             initialSlide: 0,
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 16,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
