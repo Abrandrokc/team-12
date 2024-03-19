@@ -66,6 +66,7 @@ ul.info-list .info-item.ac {
   padding-bottom: 20px;
   position: relative;
   background-color: transparent;
+  margin-top: 32px;
 }
 .ac .ac-trigger::after {
   display: none;
@@ -117,6 +118,7 @@ li.info-item.ac .button-up-down {
 .button-up-down svg {
   height: 20px;
   width: 20px;
+  stroke: #fafafa;
 }
 
 /* ================== /  SKILLS STYLES FOR MOBILE ================== */
@@ -188,6 +190,9 @@ li.info-item.ac .button-up-down {
 /* ================== STYLES FOR DESCTOP ================== */
 
 @media screen and (min-width: 1440px) {
+  .about-me {
+    padding-top: 96px;
+  }
   .title-with-photo {
     display: flex;
     margin-bottom: 96px;
