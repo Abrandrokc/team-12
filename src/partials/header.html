@@ -22,7 +22,9 @@
         />
       </picture>
 
-      <p class="header-logo__text">jefferson*</p>
+      <svg class="header-logo__svg" width="84" height="19">
+        <use href="./img/sprite.svg#icon-jefferson"></use>
+      </svg>
     </div>
 
     <nav class="header-nav">
@@ -30,38 +32,55 @@
         <button class="header-nav__menu" type="button">Menu</button>
         <ul class="header-list is-hidden">
           <li header-items>
-            <a class="header-link" href="./about-me.html">About me</a>
+            <a class="header-link" href="./partials/about-me.html">About me</a>
           </li>
           <li header-items>
-            <a class="header-link" href="./benefits.html">Benefits</a>
+            <a class="header-link" href="./partials/benefits.html">Benefits</a>
           </li>
           <li header-items>
-            <a class="header-link" href="./projects.html">Projects</a>
+            <a class="header-link" href="./partials/projects.html">Projects</a>
           </li>
-          <li header-items><a class="header-link" href="./FAQ.html">FAQ</a></li>
+          <li header-items>
+            <a class="header-link" href="./partials/FAQ.html">FAQ</a>
+          </li>
         </ul>
       </div>
     </nav>
     <button class="header-order" type="button">
-      <a class="header-order__link" href="./work-together.html"
+      <a class="header-order__link" href="#section-work-together"
         >Order the project</a
       >
     </button>
     <button class="menu-open" type="button">
       <svg class="menu-open__svg" width="28" height="28">
-        <use href="../img/sprite.svg#icon-menu"></use>
+        <use href="./img/sprite.svg#icon-menu"></use>
       </svg>
     </button>
   </div>
   <div class="mobile-menu">
-    <button class="menu-close" type="button">
-      <svg class="menu-close__svg" width="16" height="16">
-        <use href="../img/sprite.svg#icon-x"></use>
-      </svg>
-    </button>
-    <div class="markup"></div>
-    <button class="mobile-btn" type="button">
-      <a class="mobile-link" href="./work-together.html">Order the project</a>
-    </button>
+    <div class="mobile-wrap">
+      <div class="mobile-container__svg">
+        <button class="menu-close" type="button">
+          <svg class="menu-close__svg" width="16" height="16">
+            <use href="../img/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="markup">
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">About me</a></li>
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">Benefits</a></li>
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">Projects</a></li>
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="mobile-container__btn">
+        <button class="mobile-btn" type="button">
+          <a class="mobile-link" href="#section-work-together"
+            >Order the project</a
+          >
+        </button>
+      </div>
+    </div>
   </div>
 </header>
