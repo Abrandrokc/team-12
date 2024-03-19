@@ -84,7 +84,9 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   });
 });
 
+import { isElementInViewport, addKeyframesAnimation } from './js/covers'
 const element = document.querySelector('.covers');
+let isAnimationAdded = false;
 
 projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
   if (keyCode === 9) {
@@ -92,39 +94,37 @@ projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
   }
 });
 
-// if (isElementInViewport(element)) {
-//     console.log('Елемент видимий в вьюпорті');
-// } else {
-//     console.log('Елемент не видимий в вьюпорті');
-// }
+ if (isElementInViewport(element)) {
+     console.log('Елемент видимий в вьюпорті');
+ } else {
+     console.log('Елемент не видимий в вьюпорті');
+ }
 
 console.log(CSS);
 
 window.visualViewport.addEventListener('scroll', function () {
   if (isElementInViewport(element)) {
     console.log('Елемент видимий в вьюпорті');
-    // element.animate(
-    // [
-    //     {
-    //     // from
-    //     opacity: 0,
-    //     color: "#fff",
-    //     },
-    //     {
-    //     // to
-    //     opacity: 1,
-    //     color: "#000",
-    //     },
-    // ],
-    // 2000,
-    // );
+     element.animate(
+     [
+         {
+        // from
+         opacity: 0,
+         color: "#fff",
+         },
+         {
+         // to
+        opacity: 1,
+         color: "#000",
+         },
+     ],
+     2000,
+     );
   } else {
     console.log('Елемент не видимий в вьюпорті');
   }
 });
 
-import { isElementInViewport, addKeyframesAnimation } from './js/covers'
-const element = document.querySelector('.covers');
-let isAnimationAdded = false;
+
 
 
