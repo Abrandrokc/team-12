@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/team-12/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/team-12/assets/vendor-bb54f42d.js">
     <link rel="stylesheet" href="/team-12/assets/vendor-91413512.css">
-    <link rel="stylesheet" href="/team-12/assets/index-f6a1b501.css">
+    <link rel="stylesheet" href="/team-12/assets/index-ae1e23a7.css">
   </head>
   <body>
     <header class="section header">
@@ -78,15 +78,30 @@
     </button>
   </div>
   <div class="mobile-menu">
-    <button class="menu-close" type="button">
-      <svg class="menu-close__svg" width="16" height="16">
-        <use href="../img/sprite.svg#icon-x"></use>
-      </svg>
-    </button>
-    <div class="markup"></div>
-    <button class="mobile-btn" type="button">
-      <a class="mobile-link" href="#section-work-together">Order the project</a>
-    </button>
+    <div class="mobile-wrap">
+      <div class="mobile-container__svg">
+        <button class="menu-close" type="button">
+          <svg class="menu-close__svg" width="16" height="16">
+            <use href="../img/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="markup">
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">About me</a></li>
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">Benefits</a></li>
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">Projects</a></li>
+          <li class="mob-menu__item"><a class="mob-menu__link" href="">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="mobile-container__btn">
+        <button class="mobile-btn" type="button">
+          <a class="mobile-link" href="#section-work-together"
+            >Order the project</a
+          >
+        </button>
+      </div>
+    </div>
   </div>
 </header>
 
