@@ -13,16 +13,10 @@ export function formEmailInput(event)   {
   
  inputMail = event.target.value;
 
-    if (inputMail.length > maxLength) {
-        inputMail = `...${inputMail.substring(inputMail.length - maxLength)}`;
-        event.target.value = inputMail;
-        event.target.setSelectionRange(0, 0);
-    } else if (inputMail.startsWith('...')) {
-        event.target.value = inputMail.slice(3);
-    }
+
     const input = event.target;
    
-
+  
      if (!input.validity.valid) {
         errorMessage.classList.remove('success-input');
         errorMessage.classList.add('error-input');
@@ -34,13 +28,15 @@ export function formEmailInput(event)   {
         errorMessage.classList.add('success-input');
         errorMessage.textContent = 'Succes!';
          errorMessage.style.display = 'block';
-           setSuccessStyle(formEmail); 
+         setSuccessStyle(formEmail); 
+         
     }
+
     function setSuccessStyle(formEmail) {
     formEmail.classList.remove('error'); 
         formEmail.classList.add('success'); 
 }
-
+  
 function setErrorStyle(formEmail) {
     formEmail.classList.remove('success');
     formEmail.classList.add('error');
@@ -50,14 +46,8 @@ function setErrorStyle(formEmail) {
 
 
 export function formCommentlInput(event)  {
-   inputComment = event.target.value;
- if (inputComment.length > maxLength) {
-        inputComment = `...${inputComment.substring(inputComment.length - maxLength)}`;
-        event.target.value = inputComment;
-        event.target.setSelectionRange(inputComment.length, inputComment.length);
-    } else if (inputComment.startsWith('...')) {
-        event.target.value = inputComment.slice(3);
-    }
+  return inputComment = event.target.value;
+
 };
 
 export function closeModalWindow(event)  {
@@ -69,31 +59,32 @@ export function closeModalWindow(event)  {
 export async function submitForm(event) {
     event.preventDefault();
     await sendDataToServer(); 
-  
-    backdrope.classList.add('is-open');
+
+
     formEmail.value = '';
     formComment.value = '';
-   errorMessage.textContent = '';
+    errorMessage.textContent = '';
     errorMessage.style.display = 'none'; 
     formEmail.classList.remove('success');
-      formEmail.classList.remove('error');
-
+    formEmail.classList.remove('error');
+}
 
 async function sendDataToServer() {
     const formData = new FormData(form);
-    const dataToSend = {
-        "email": formData.get('mail'),
-        "comment": formData.get('comment')
+     const dataToSend = {
+        "email": inputMail, 
+        "comment": inputComment 
     };
 
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dataToSend)
+    };
     try {
-        const response = await fetch('https://portfolio-js.b.goit.study/api/requests', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(dataToSend)
-        });
+        const response = await fetch('https://portfolio-js.b.goit.study/api/requests', options);
         
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -101,11 +92,15 @@ async function sendDataToServer() {
         
         const responseData = await response.json();
         console.log(responseData); 
+        backdrope.classList.add('is-open');
+        
     } catch (error) {
         console.error('Error:', error);
-    }
-    }
-};
+        alert('Error! Try again');
+        
+             }
+}
+
     
 export function backdropeClose(event) {
     if (event.target === backdrope) {
