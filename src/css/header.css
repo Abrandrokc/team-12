@@ -28,7 +28,7 @@
     background-color: transparent;
   }
 
-  .menu-open__svg {
+  .menu-open__svg, .header-logo__svg {
     fill: #FAFAFA;
   }
 
