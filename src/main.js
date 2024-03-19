@@ -1,9 +1,15 @@
 import axios from 'axios';
 import { renderSlide } from './js/reviews';
 import Swiper from 'swiper';
+import { Navigation, Keyboard } from 'swiper/modules';
+import { projectsSwiper } from './js/projects';
 import 'swiper/swiper-bundle.css';
 import { itemsAccordion, addAboutMeSwiper } from './js/aboutme';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
 import SHOWACC from './js/FAQ';
+
 itemsAccordion;
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 SHOWACC;
@@ -34,3 +40,4 @@ backdrope.addEventListener('click', backdropeClose);
 import { escapeClose } from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
+
