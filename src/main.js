@@ -37,46 +37,16 @@ import { escapeClose} from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
 
+// Js code for section "Covers"
 
-
+import { isElementInViewport, addKeyframesAnimation } from './js/covers'
 const element = document.querySelector('.covers');
-
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// if (isElementInViewport(element)) {
-//     console.log('Елемент видимий в вьюпорті');
-// } else {
-//     console.log('Елемент не видимий в вьюпорті');
-// }
-
-console.log(CSS)
-
+let isAnimationAdded = false;
+ 
 window.visualViewport.addEventListener('scroll', function () {
     if (isElementInViewport(element)) {
         console.log('Елемент видимий в вьюпорті');
-        // element.animate(
-        // [
-        //     {
-        //     // from
-        //     opacity: 0,
-        //     color: "#fff",
-        //     },
-        //     {
-        //     // to
-        //     opacity: 1,
-        //     color: "#000",
-        //     },
-        // ],
-        // 2000,
-        // );
+        addKeyframesAnimation();
     } else {
         console.log('Елемент не видимий в вьюпорті');
     }
