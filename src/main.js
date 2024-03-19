@@ -9,6 +9,8 @@ import { addAboutMeSwiper } from './js/aboutme';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import SHOWACC from './js/FAQ';
+import { heroSection, backgroundImages, change } from './js/hero';
+
 
 itemsAccordion();
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
