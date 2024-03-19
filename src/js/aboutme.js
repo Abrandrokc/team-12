@@ -1,10 +1,11 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 
 export function itemsAccordion() {
   const buttonAccordion = document.querySelector('.button-up-down');
+
   new Accordion('.info-list', {
     duration: 700,
     showMultiple: true,
@@ -22,8 +23,8 @@ export function itemsAccordion() {
 
 export async function addAboutMeSwiper() {
   const swiper = new Swiper('.skills-container', {
-    modules: [Navigation],
-    loop: true,
+    modules: [Navigation, Keyboard],
+   
     navigation: {
       nextEl: '.skills-button-next',
       prevEl: '.skills-button-prev',
