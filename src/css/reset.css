@@ -4,7 +4,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+body{
   margin: 0;
 }
 body {
@@ -16,6 +17,7 @@ body {
   font-weight: 500;
   color: #fafafa;
   min-height: 100vh;
+  
 }
 
 p:last-child {
