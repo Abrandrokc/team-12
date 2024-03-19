@@ -119,30 +119,31 @@ li.info-item.ac .button-up-down {
   width: 20px;
 }
 
+/* ================== /  SKILLS STYLES FOR MOBILE ================== */
 
-.swiper-container {
-  width: 100%;
+.skills-container {
+  width: 260px;
   overflow: hidden;
+  margin-top: 32px;
+  margin-right: auto;
 }
 
-.swiper-wrapper {
-  padding: 10px;
-  display: flex;
-}
-
-.about-me-slide {
-  display: flex;
+.skills-slide {
+  display: flex !important;
   font-weight: 500;
   font-size: 16px;
   color: #fafafa;
-  width: 130px;
-  height: 130px;
+  width: 130px !important;
+  height: 130px !important;
   border-radius: 50%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  /* border: 1px solid rgba(250, 250, 250, 0.2); */
   background-color: #242527;
   justify-content: center;
   align-items: center;
+}
 
+.swiper-slide.swiper-slide-active {
+  background-color: #ed3b44;
 }
 /* ================== /STYLES FOR MOBILE ================== */
 
@@ -169,15 +170,20 @@ li.info-item.ac .button-up-down {
   .info-item:first-child div.info-item-descr.ac-panel {
     gap: 16px;
   }
-  .swiper-slide {
+
+  .skills-container {
+    width: 600px;
+    overflow: hidden;
+    margin-top: 64px;
+  }
+  .skills-slide {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
-    width: 130px;
-    height: 130px;
+    width: 200px !important;
+    height: 200px !important;
   }
 }
-
 
 /* ================== STYLES FOR DESCTOP ================== */
 
@@ -209,6 +215,13 @@ li.info-item.ac .button-up-down {
   }
   div.info-item-descr.ac-panel .info-item-text {
     width: 612px;
+  }
+
+  .skills-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 96px;
+    margin-left: 32px;
   }
 }
 
