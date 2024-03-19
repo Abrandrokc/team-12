@@ -9,7 +9,7 @@ const form = document.querySelector("form")
 let inputMail;
 let inputComment;
 
-formEmail.addEventListener('input', function(event)  {
+export function formEmailInput(event)   {
   
  inputMail = event.target.value;
 
@@ -46,10 +46,10 @@ function setErrorStyle(formEmail) {
     formEmail.classList.add('error');
 }
 
-});
+};
 
 
-formComment.addEventListener('input', function (event) {
+export function formCommentlInput(event)  {
    inputComment = event.target.value;
  if (inputComment.length > maxLength) {
         inputComment = `...${inputComment.substring(inputComment.length - maxLength)}`;
@@ -58,15 +58,15 @@ formComment.addEventListener('input', function (event) {
     } else if (inputComment.startsWith('...')) {
         event.target.value = inputComment.slice(3);
     }
-})
+};
 
-buttonClose.addEventListener("click", function () {
+export function closeModalWindow(event)  {
        backdrope.classList.remove('is-open');
-});
+};
 
 
 // console.log(dataToSend)
-form.addEventListener("submit", async event => {
+export async function submitForm(event) {
     event.preventDefault();
     await sendDataToServer(); 
   
@@ -105,15 +105,18 @@ async function sendDataToServer() {
         console.error('Error:', error);
     }
     }
-    });
-backdrope.addEventListener('click', function(event) {
+};
+    
+export function backdropeClose(event) {
     if (event.target === backdrope) {
         backdrope.classList.remove('is-open');
     }
-});
-document.addEventListener('keydown', function(event) {
+};
+export function escapeClose(event) {
     if (event.key === 'Escape' && backdrope.classList.contains('is-open')) {
         backdrope.classList.remove('is-open');
     }
-});
+};
+
+
 
