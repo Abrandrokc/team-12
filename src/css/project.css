@@ -6,7 +6,7 @@
 .projects-container {
   margin: 0 auto;
   max-width: 375px;
-  padding: 64px 16px;
+  padding: 64px 0;
 }
 
 .projects-list-item.visually-hidden {
@@ -162,7 +162,7 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 @media screen and (min-width: 768px) {
   .projects-container {
     max-width: 768px;
-    padding: 96px 32px;
+    padding: 96px 0;
   }
 
   .projects-list-item {
@@ -218,7 +218,7 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 @media screen and (min-width: 1440px) {
   .projects-container {
     max-width: 1440px;
-    padding: 164px 32px;
+    padding: 164px 0;
   }
 
   .projects-list-item.swiper-slide {
