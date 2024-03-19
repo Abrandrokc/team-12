@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 export function itemsAccordion() {
   const buttonAccordion = document.querySelector('.button-up-down');
@@ -23,7 +23,7 @@ export function itemsAccordion() {
 
 export async function addAboutMeSwiper() {
   const swiper = new Swiper('.skills-container', {
-    modules: [Navigation, Keyboard],
+    modules: [Navigation, Keyboard, Mousewheel],
    
     navigation: {
       nextEl: '.skills-button-next',
@@ -38,6 +38,9 @@ export async function addAboutMeSwiper() {
       768: { slidesPerView: 3 },
       1440: { slidesPerView: 6 },
     },
+     mousewheel: {
+    invert: true,
+  },
   });
 
   document.addEventListener('keydown', function (event) {
