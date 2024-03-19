@@ -127,7 +127,6 @@ li.info-item.ac .button-up-down {
   width: 260px;
   overflow: hidden;
   margin-top: 32px;
-  margin-right: auto;
 }
 
 .skills-slide {
@@ -146,6 +145,9 @@ li.info-item.ac .button-up-down {
 
 .skills-slide.swiper-slide-active {
   background-color: #ed3b44;
+}
+.skills-button-next svg {
+  stroke: #3b3b3b;
 }
 /* ================== /STYLES FOR MOBILE ================== */
 
