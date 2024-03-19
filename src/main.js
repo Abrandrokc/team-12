@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { renderSlide } from './js/reviews';
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import { projectsSwiper } from './js/projects';
 import 'swiper/swiper-bundle.css';
 import { itemsAccordion } from './js/aboutme';
