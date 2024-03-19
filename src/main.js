@@ -40,3 +40,14 @@ backdrope.addEventListener('click', backdropeClose);
 import { escapeClose } from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
+
+
+
+projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
+  if (keyCode === 9) {
+    projectsSwiper.slideNext();
+  }
+});
+
+
+
