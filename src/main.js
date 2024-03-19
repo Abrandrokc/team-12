@@ -39,7 +39,7 @@ document.addEventListener('keydown', escapeClose);
 
 
 
-const element = document.getElementById('your-element-id');
+const element = document.querySelector('.covers');
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -51,15 +51,32 @@ function isElementInViewport(el) {
     );
 }
 
-if (isElementInViewport(element)) {
-    console.log('Елемент видимий в вьюпорті');
-} else {
-    console.log('Елемент не видимий в вьюпорті');
-}
+// if (isElementInViewport(element)) {
+//     console.log('Елемент видимий в вьюпорті');
+// } else {
+//     console.log('Елемент не видимий в вьюпорті');
+// }
+
+console.log(CSS)
 
 window.visualViewport.addEventListener('scroll', function () {
     if (isElementInViewport(element)) {
         console.log('Елемент видимий в вьюпорті');
+        // element.animate(
+        // [
+        //     {
+        //     // from
+        //     opacity: 0,
+        //     color: "#fff",
+        //     },
+        //     {
+        //     // to
+        //     opacity: 1,
+        //     color: "#000",
+        //     },
+        // ],
+        // 2000,
+        // );
     } else {
         console.log('Елемент не видимий в вьюпорті');
     }
