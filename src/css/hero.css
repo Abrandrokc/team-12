@@ -1,7 +1,11 @@
-.hero {
+.section.hero {
   background-color: black;
   padding: 280px 16px 36px 16px;
-  background-image: url(../img/Herocolor6.png);
+  background-image: image-set(
+    url(../img/Herocolor6.png) 1x,
+    url(../img/Herocolor6@2x.png) 2x,
+    url(../img/Herocolor6@3x.png) 3x
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -79,7 +83,7 @@
     justify-content: flex-end;
   }
 
-  .hero {
+  .section.hero {
     padding: 300px 32px 32px 32px;
   }
 
@@ -107,7 +111,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .hero {
+  .section.hero {
     padding: 300px 32px 32px 178px;
   }
 
