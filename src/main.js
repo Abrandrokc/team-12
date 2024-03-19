@@ -4,10 +4,10 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 import { projectsSwiper } from './js/projects';
 import 'swiper/swiper-bundle.css';
-import { itemsAccordion, addAboutMeSwiper } from './js/aboutme';
+import { itemsAccordion }  from './js/aboutme';
+import { addAboutMeSwiper }  from './js/aboutme';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-
 import SHOWACC from './js/FAQ';
 
 itemsAccordion;

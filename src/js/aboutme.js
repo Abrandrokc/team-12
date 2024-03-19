@@ -5,6 +5,7 @@ import { Navigation, Keyboard } from 'swiper/modules';
 
 export function itemsAccordion() {
   const buttonAccordion = document.querySelector('.button-up-down');
+
   new Accordion('.info-list', {
     duration: 700,
     showMultiple: true,
