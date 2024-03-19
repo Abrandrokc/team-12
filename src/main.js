@@ -41,8 +41,41 @@ import { escapeClose } from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
 
+// HEADER JS
+import {
+  menuOpenBtn,
+  menuCloseBtn,
+  mobMenuContainer,
+  orderBtn,
+  headerMenuBtn,
+  headerList,
+  mobOrderBtn,
+  closeMenu,
+  openMenu,
+} from './js/header';
 
+menuOpenBtn.addEventListener('click', openMenu);
+menuCloseBtn.addEventListener('click', closeMenu);
 
+headerMenuBtn.addEventListener('click', event => {
+  headerList.classList.toggle('is-hidden');
+  headerList.style.opacity = 1;
+});
+
+mobOrderBtn.addEventListener('click', event => {
+  closeMenu();
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    closeMenu();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
 
 const element = document.querySelector('.covers');
 
@@ -52,37 +85,33 @@ projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
   }
 });
 
-
-
-
 // if (isElementInViewport(element)) {
 //     console.log('Елемент видимий в вьюпорті');
 // } else {
 //     console.log('Елемент не видимий в вьюпорті');
 // }
 
-console.log(CSS)
+console.log(CSS);
 
 window.visualViewport.addEventListener('scroll', function () {
-    if (isElementInViewport(element)) {
-        console.log('Елемент видимий в вьюпорті');
-        // element.animate(
-        // [
-        //     {
-        //     // from
-        //     opacity: 0,
-        //     color: "#fff",
-        //     },
-        //     {
-        //     // to
-        //     opacity: 1,
-        //     color: "#000",
-        //     },
-        // ],
-        // 2000,
-        // );
-    } else {
-        console.log('Елемент не видимий в вьюпорті');
-    }
+  if (isElementInViewport(element)) {
+    console.log('Елемент видимий в вьюпорті');
+    // element.animate(
+    // [
+    //     {
+    //     // from
+    //     opacity: 0,
+    //     color: "#fff",
+    //     },
+    //     {
+    //     // to
+    //     opacity: 1,
+    //     color: "#000",
+    //     },
+    // ],
+    // 2000,
+    // );
+  } else {
+    console.log('Елемент не видимий в вьюпорті');
+  }
 });
-
