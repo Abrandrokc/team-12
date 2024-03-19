@@ -1,5 +1,3 @@
-
-
 h1,
 h2,
 h3,
@@ -43,12 +41,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-.section {
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 16px;
 }
 
 @media screen and (min-width: 375px) {
