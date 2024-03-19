@@ -24,7 +24,7 @@ export function itemsAccordion() {
 export async function addAboutMeSwiper() {
   const swiper = new Swiper('.skills-container', {
     modules: [Navigation, Keyboard, Mousewheel],
-   
+
     navigation: {
       nextEl: '.skills-button-next',
       prevEl: '.skills-button-prev',
@@ -38,9 +38,10 @@ export async function addAboutMeSwiper() {
       768: { slidesPerView: 3 },
       1440: { slidesPerView: 6 },
     },
-     mousewheel: {
-    invert: true,
-  },
+    mousewheel: {
+      invert: true,
+    },
+    loop: true,
   });
 
   document.addEventListener('keydown', function (event) {

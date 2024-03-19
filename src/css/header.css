@@ -31,6 +31,16 @@
       
   }
 
+  .header-logo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-logo__svg{
+    margin-left: 10px;
+  }
+
   .menu-open{
     border: none;
     background-color: transparent;

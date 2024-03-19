@@ -1,8 +1,8 @@
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 export const projectsSwiper = new Swiper('.projects-swiper-container', {
-  modules: [Navigation, Keyboard],
+  modules: [Navigation, Keyboard, Mousewheel],
   slidesPerView: 1,
   spaceBetween: 30,
   breakpoints: {
@@ -20,5 +20,8 @@ export const projectsSwiper = new Swiper('.projects-swiper-container', {
   keyboard: {
     enabled: true,
     onlyInViewport: true,
+  },
+  mousewheel: {
+    invert: true,
   },
 });
