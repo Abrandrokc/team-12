@@ -1,1 +1,91 @@
-<section clas="section header"></section>
+<header class="section header">
+  <div class="header-container">
+    <div class="header-logo__container">
+      <picture>
+        <source
+          srcset="./img/logo.png, ./img/logo@2x.png 2x, ./img/logo@3x.png 3x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./img/image.png, ./img/image@2x.png 2x, ./img/image@3x.png 3x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./img/mobile-image@2x.png 2x, ./img/mobile-image@3x.png 3x"
+          media="(min-width: 375px)"
+        />
+        <img
+          src="./img/mobile-image.png"
+          alt="Хлопець в окулярах"
+          width="80"
+          height="80"
+        />
+      </picture>
+
+      <svg class="header-logo__svg" width="84" height="19">
+        <use href="./img/sprite.svg#icon-jefferson"></use>
+      </svg>
+    </div>
+
+    <nav class="header-nav">
+      <div class="header-nav__wrap">
+        <button class="header-nav__menu" type="button">Menu</button>
+        <ul class="header-list is-hidden">
+          <li header-items>
+
+            <a class="header-link" href="#about-me">About me</a>
+
+          </li>
+          <li header-items>
+            <a class="header-link" href="./partials/benefits.html">Benefits</a>
+          </li>
+          <li header-items>
+            <a class="header-link" href="./partials/projects.html">Projects</a>
+          </li>
+         
+          <li header-items><a class="header-link" href="#FAQ">FAQ</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <button class="header-order" type="button">
+      <a class="header-order__link" href="#section-work-together"
+        >Order the project</a
+      >
+    </button>
+    <button class="menu-open" type="button">
+      <svg class="menu-open__svg" width="28" height="28">
+        <use href="./img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <button class="menu-close" type="button">
+      <svg class="menu-close__svg" width="16" height="16">
+        <use href="./img/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+
+    <div class="mob-menu__wrap">
+      <ul class="mob-menu__list">
+        <li class="itemmob-menu__item">
+          <a class="mob-menu__link" href="#about-me">About me</a>
+        </li>
+        <li class="itemmob-menu__item">
+          <a class="mob-menu__link" href="">Benefits</a>
+        </li>
+        <li class="itemmob-menu__item">
+          <a class="mob-menu__link" href="">Projects</a>
+        </li>
+        <li class="itemmob-menu__item">
+          <a class="mob-menu__link" href="#FAQ">FAQ</a>
+        </li>
+      </ul>
+      <button class="mobile-btn" type="button">
+        <a class="mobile-link" href="#section-work-together"
+          >Order the project</a
+        >
+      </button>
+    </div>
+  </div>
+</header>
