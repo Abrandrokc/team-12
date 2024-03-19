@@ -16,7 +16,7 @@ export function closeMenu() {
   mobMenuContainer.classList.remove('is-open');
   menuOpenBtn.classList.remove('is-hidden');
   menuCloseBtn.classList.add('is-hidden');
-  orderBtn.style.display = 'none';
+  
 }
 
 menuOpenBtn.addEventListener('click', openMenu);
