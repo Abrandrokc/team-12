@@ -60,6 +60,8 @@
   background-color: transparent;
   border: 1px solid rgba(250, 250, 250, 0.2);
    height: 34px;
+   border-radius: 50%;
+   width: 20px;
 }
 
 #FAQ .faq-arrow-btn.ac-trigger::after {
@@ -75,7 +77,9 @@
   padding-bottom: 0;
   padding-left: 0;
 }
-
+.faq-arrow-icon{
+  stroke: #fafafa;
+}
 /* =============== TABLET ===============*/
 
 @media screen and (min-width: 768px) {
