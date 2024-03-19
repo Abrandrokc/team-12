@@ -41,48 +41,11 @@ import { escapeClose } from './js/work-together';
 document.addEventListener('keydown', escapeClose);
 // End JS code for cection "Work together"
 
+// Js code for section "Covers"
 
 
-
+import { isElementInViewport, addKeyframesAnimation } from './js/covers'
 const element = document.querySelector('.covers');
-
-projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
-  if (keyCode === 9) {
-    projectsSwiper.slideNext();
-  }
-});
-
-
-
-
-// if (isElementInViewport(element)) {
-//     console.log('Елемент видимий в вьюпорті');
-// } else {
-//     console.log('Елемент не видимий в вьюпорті');
-// }
-
-console.log(CSS)
-
-window.visualViewport.addEventListener('scroll', function () {
-    if (isElementInViewport(element)) {
-        console.log('Елемент видимий в вьюпорті');
-        // element.animate(
-        // [
-        //     {
-        //     // from
-        //     opacity: 0,
-        //     color: "#fff",
-        //     },
-        //     {
-        //     // to
-        //     opacity: 1,
-        //     color: "#000",
-        //     },
-        // ],
-        // 2000,
-        // );
-    } else {
-        console.log('Елемент не видимий в вьюпорті');
-    }
-});
+let isAnimationAdded = false;
+ 
 
