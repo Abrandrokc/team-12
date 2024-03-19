@@ -47,5 +47,4 @@ document.addEventListener('keydown', escapeClose);
 import { isElementInViewport, addKeyframesAnimation } from './js/covers'
 const element = document.querySelector('.covers');
 let isAnimationAdded = false;
- 
 
