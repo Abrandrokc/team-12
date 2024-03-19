@@ -1,7 +1,7 @@
 .hero {
   background-color: black;
   padding: 280px 16px 36px 16px;
-  background-image: url(../img/Herocolor6.png);
+  background-image: url(./img/Herocolor6.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
