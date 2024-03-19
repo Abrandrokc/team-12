@@ -7,6 +7,7 @@
   }
 
      .header {
+      max-width: 100%;
        position: sticky;
        top: 25px;
        left: 0;
@@ -34,7 +35,6 @@
   .header-logo__container {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   .header-logo__svg{
@@ -47,7 +47,7 @@
   }
 
   .menu-open__svg, .header-logo__svg {
-    fill: #FAFAFA;
+    stroke: #FAFAFA;
   }
 
 
@@ -241,17 +241,7 @@ color: #ED3B44;
 }
 
 
-.menu-close {
-background-color: transparent;
-border: none;
-position: absolute;
-top: 10;
-right: 10;     
-}
-        
-.menu-close__svg {
-stroke: #FAFAFA;
-}
+
         
 .mobile-menu.is-open {
 opacity: 1;
@@ -277,23 +267,37 @@ background-size: cover;
 background-color: blue;
 }
 
- .mob-menu__wrap {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 30px;
+ .mobile-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px auto;
  }
 
- .mob-menu__list {
-   display: flex;
-   padding-top: 200px;
-   flex-direction: column;
-   align-items: center;
+ .mobile-container__svg {
+position: relative;
  }
 
+ .menu-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+   width: 16px;
+   height: 16px;
+   background-color: transparent;
+   border: none;
+ }
 
+ .menu-close__svg {
+   stroke: #FAFAFA;
+ }
+
+.mobile-container__btn{
+  display: flex;
+  justify-content: center;
+}
 
 .mobile-btn {
 margin-top: auto;
