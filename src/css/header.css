@@ -17,10 +17,18 @@
 
 
   .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    position: absolute;
+     
+      top: 0;
+ 
+      left: 0;
+     
+      width: 100%;
+     
+      
+     
+      z-index: 1000;
+      
   }
 
   .menu-open{
@@ -47,7 +55,7 @@
     }
     
     .header {
-      position: sticky;
+      position: absolute;
       top: 25px;
       left: 0;
       width: 100%;

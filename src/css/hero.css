@@ -11,9 +11,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
+ 
 }
-
+.hero{
+  position: relative;
+}
 .hero-header {
   font-family: 'Inter Tight', sans-serif;
   font-size: 50px;
