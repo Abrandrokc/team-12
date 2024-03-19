@@ -7,3 +7,4 @@ projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
     projectsSwiper.slideNext();
   }
 });
+
