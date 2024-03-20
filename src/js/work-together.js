@@ -13,7 +13,6 @@ export function formEmailInput(event)   {
   
  inputMail = event.target.value;
 
-
     const input = event.target;
    
   
@@ -46,8 +45,9 @@ function setErrorStyle(formEmail) {
 
 
 export function formCommentlInput(event)  {
-  return inputComment = event.target.value;
-
+    inputComment = event.target.value;
+    
+    
 };
 
 export function closeModalWindow(event)  {
