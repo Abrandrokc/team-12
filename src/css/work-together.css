@@ -1,15 +1,17 @@
-.container-work {
-  width: 320px;
-  padding: 0 16px;
-  margin: 0 auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 /* Styles for mobile */
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2),
   (min-width: 375px) {
+  .section-work {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    min-width: 320px;
+  }
+  .container-work {
+    padding: 0 16px;
+    margin: 0 auto;
+  }
   .work-together {
     background-color: #1c1d20;
   }
@@ -48,7 +50,7 @@
   }
   .form-item {
     all: unset;
-    width: 343px;
+    width: 100%;
     height: 40px;
     font-size: 16px;
     font-weight: 500;
@@ -58,7 +60,6 @@
     border: none;
     text-align: left;
     color: #fafafa;
-    margin-bottom: 8px;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
   .error-input {
@@ -116,13 +117,13 @@
     background-color: #e0373f;
   }
   .navigation {
+    width: 300px;
     margin-top: 64px;
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    justify-content: space-between;
   }
   .nav-item {
-    font-family: Inter Tight;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
@@ -228,10 +229,13 @@
 
 /* Styles for tablet */
 @media screen and (min-width: 768px) {
-  .container-work {
-    width: 768px;
-    margin: 0 auto;
+  .section-work {
+    padding-top: 80px;
     padding-bottom: 169px;
+  }
+  .container-work {
+    width: calc(768px - 2 * 32px);
+    padding: 0 32px;
   }
 
   .photo-title {
@@ -264,7 +268,6 @@
     width: 245px;
     height: 40px;
     background-color: transparent;
-    margin-bottom: 8px;
   }
   .button-send {
     background-color: #ed3b44;
@@ -274,7 +277,7 @@
   }
   .navigation {
     margin-top: 18px;
-    gap: 8px;
+    width: 418px;
   }
   .nav-item {
     text-align: center;
@@ -299,14 +302,18 @@
 /* End styles for tablet */
 
 /* Styles for desctop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .container-work {
-    width: 1158px;
-    margin: 0 auto;
-    padding-left: 196px;
-    padding-right: 196px;
+    width: calc(1440px - 2 * 196px);
+    padding: 0 196px;
   }
-
+  .button-send {
+    width: 150px;
+    height: 150px;
+  }
+  .work-form {
+    gap: 86px;
+  }
   .form-item {
     width: 390px;
     height: 44px;
