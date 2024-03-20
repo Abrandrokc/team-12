@@ -17,14 +17,18 @@ export const backgroundImages = [
 let i = 0;
 
 export function change() {
-  heroSection.style.backgroundImage = `url(${backgroundImages[i]})`;
-  i++;
+   heroSection.style.opacity = 0;
+  setTimeout(() => {
+    heroSection.style.backgroundImage = `url(${backgroundImages[i]})`;
+    heroSection.style.opacity = 1; // Задаємо прозорість 1 після зміни фону
+    i++;
+    
+    if(i > backgroundImages.length - 1) {
+      i = 0;
+    }
+  }, 500); // Затримка 500 мс, щоб забезпечити плавну анімацію
   
-  if(i > backgroundImages.length - 1) {
-    i = 0;
-  }
 }
-
 setInterval(change, 5000);
 
 
