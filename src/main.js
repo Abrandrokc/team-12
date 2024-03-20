@@ -16,10 +16,8 @@ const element = document.querySelector(".covers");
 
 window.visualViewport.addEventListener("scroll", function () {
     if (isElementInViewport(element)) {
-        console.log("Елемент видимий в вьюпорті");
+        
         addKeyframesAnimation();
-    } else {
-        console.log("Елемент не видимий в вьюпорті");
     }
 });
 itemsAccordion();
