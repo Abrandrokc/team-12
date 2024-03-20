@@ -34,7 +34,7 @@
   background-color: #3b3b3b;
   border-radius: 20px;
   padding: 24px;
-  width: 344px;
+
   height: 270px;
 }
 .benefits-svg-div {
@@ -77,6 +77,11 @@
   width: max-content;
   background-color: #242527;
   display: block;
+}
+@media screen and (min-width: 375px) {
+  .benefits-item {
+    width: 344px;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-benefits {
