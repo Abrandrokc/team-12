@@ -47,7 +47,7 @@ export async function renderSlide() {
             },
             breakpoints: {
                 
-                1440: {width: 332},
+                1440: {width: 342},
             },
            
             hashNavigation: {
