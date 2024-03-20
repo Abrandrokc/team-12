@@ -11,7 +11,17 @@ import 'accordion-js/dist/accordion.min.css';
 import SHOWACC from './js/FAQ';
 import { heroSection, backgroundImages, change } from './js/hero';
 
+import { isElementInViewport, addKeyframesAnimation } from "./js/covers"
+const element = document.querySelector(".covers");
 
+window.visualViewport.addEventListener("scroll", function () {
+    if (isElementInViewport(element)) {
+        console.log("Елемент видимий в вьюпорті");
+        addKeyframesAnimation();
+    } else {
+        console.log("Елемент не видимий в вьюпорті");
+    }
+});
 itemsAccordion();
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 SHOWACC;
@@ -72,7 +82,7 @@ mobOrderBtn.addEventListener('click', event => {
   closeMenu();
 });
 
-feature/reviews-header
+
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -84,46 +94,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   });
 });
 
-import { isElementInViewport, addKeyframesAnimation } from './js/covers'
-const element = document.querySelector('.covers');
-let isAnimationAdded = false;
 
-projectsSwiper.on('keyPress', (projectsSwiper, keyCode) => {
-  if (keyCode === 9) {
-    projectsSwiper.slideNext();
-  }
-});
-
- if (isElementInViewport(element)) {
-     console.log('Елемент видимий в вьюпорті');
- } else {
-     console.log('Елемент не видимий в вьюпорті');
- }
-
-console.log(CSS);
-
-window.visualViewport.addEventListener('scroll', function () {
-  if (isElementInViewport(element)) {
-    console.log('Елемент видимий в вьюпорті');
-     element.animate(
-     [
-         {
-        // from
-         opacity: 0,
-         color: "#fff",
-         },
-         {
-         // to
-        opacity: 1,
-         color: "#000",
-         },
-     ],
-     2000,
-     );
-  } else {
-    console.log('Елемент не видимий в вьюпорті');
-  }
-});
 
 
 

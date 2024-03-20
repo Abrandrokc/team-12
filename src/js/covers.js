@@ -1,3 +1,4 @@
+let isAnimationAdded = false;
 export function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (

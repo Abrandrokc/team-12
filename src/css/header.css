@@ -18,7 +18,9 @@
   z-index: 1000;
 }
 
-
+.header{
+  position: relative;
+}
   .header-logo__container {
     display: flex;
     justify-content: center;

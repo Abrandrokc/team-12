@@ -1,12 +1,17 @@
-
+import Herocolor5 from "../img/Herocolor5.png"
+import Herocolor4 from "../img/Herocolor4.png"
+import Herocolor3 from "../img/Herocolor3.png"
+import Herocolor2 from "../img/Herocolor2.png"
+import Herocolor from "../img/Herocolor.png"
+import Herocolor6 from "../img/Herocolor6.png"
 export const heroSection = document.querySelector('.section.hero');
 export const backgroundImages = [
-    '../img/Herocolor5.png',
-    '../img/Herocolor4.png',
-    '../img/Herocolor6.png',
-    '../img/Herocolor3.png',
-    '../img/Herocolor2.png',
-    '../img/Herocolor.png'
+    Herocolor5,
+    Herocolor4,
+    Herocolor6,
+    Herocolor3,
+    Herocolor2,
+    Herocolor
 ];
   
 let i = 0;
