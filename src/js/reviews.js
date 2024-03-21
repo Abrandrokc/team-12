@@ -37,8 +37,7 @@ export async function renderSlide() {
             initialSlide: 0,
             slidesPerView: 1,
             spaceBetween: 16,
-            slidesOffsetBefore: 1,
-            slidesOffsetAfter: 1,
+           
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
