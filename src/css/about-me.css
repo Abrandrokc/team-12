@@ -127,6 +127,7 @@ li.info-item.ac .button-up-down {
   width: 260px;
   overflow: hidden;
   margin-top: 32px;
+  display: flex;
 }
 
 .skills-slide {
@@ -146,8 +147,42 @@ li.info-item.ac .button-up-down {
 .skills-slide.swiper-slide-active {
   background-color: #ed3b44;
 }
-.skills-button-next svg {
+/* .skills-button-next svg {
   stroke: #3b3b3b;
+} */
+#skills-righth-btn.swiper-button-next.skills-next {
+  z-index: 100;
+  overflow: hidden;
+
+  top: auto;
+  width: 40px;
+  height: 40px;
+  pointer-events: all;
+  opacity: inherit;
+  color: #ffffff;
+  margin: 60px 0;
+}
+.skills-next {
+  width: 40px;
+  height: 40px;
+  padding: 18px;
+  margin-right: auto;
+  stroke: #ffffff;
+}
+
+.skills-icon-right svg {
+  stroke: #ffffff;
+}
+
+#skills-righth-btn.swiper-button-next.skills-next::after {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+#skills-righth-btn.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
 /* ================== /STYLES FOR MOBILE ================== */
 

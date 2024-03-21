@@ -24,24 +24,26 @@ export function itemsAccordion() {
 export async function addAboutMeSwiper() {
   const swiper = new Swiper('.skills-container', {
     modules: [Navigation, Keyboard, Mousewheel],
-
+    allowSlideNext: true,
+    allowSlidePrev: false,
+    loop: true,
     navigation: {
-      nextEl: '.skills-button-next',
-      prevEl: '.skills-button-prev',
+      nextEl: '.swiper-button-next',
+      onlyInViewport: true,
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      onlyInViewport: true,
+    },
+    mousewheel: {
+      invert: true,
+      onlyInViewport: true,
     },
     breakpoints: {
       375: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
       1440: { slidesPerView: 6 },
     },
-    mousewheel: {
-      invert: true,
-    },
-    loop: true,
   });
 
   document.addEventListener('keydown', function (event) {
@@ -50,10 +52,8 @@ export async function addAboutMeSwiper() {
       swiper.slideNext();
     }
     if (event.key === 'ArrowRight') {
+      event.preventDefault();
       swiper.slideNext();
-    }
-    if (event.key === 'ArrowLeft') {
-      swiper.slidePrev();
     }
   });
 }
