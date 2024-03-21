@@ -13,11 +13,14 @@
       padding-bottom: 32px;
       
 }
+
 .review-img{
     width: 48px;
     height: 48px;
-    padding-top: 32px;
-    padding-left: 32px;
+    border-radius: 10px;
+        border: 1px;
+        margin-top: 32px;
+            margin-left: 32px;
 }
 .reviews-swiper-buttons{
     position: relative;
@@ -59,6 +62,7 @@ li.swiper-slide.review-slide{
     height: 302px; 
     
 }
+
 .reviews-buttons {
     display: flex;
     justify-content: center;

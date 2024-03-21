@@ -253,10 +253,8 @@ div.swiper-button-next.skills-button-next{
     margin-top: 96px;
     margin-left: 32px;
   }
-  .skills-button-next{
-      bottom:4.5%;
-      right: 0;
-      display: block;
+ div.swiper-button-next.skills-button-next{
+      display: none;
     }
    
 }
