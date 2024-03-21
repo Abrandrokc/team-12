@@ -30,9 +30,11 @@
 .hero-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 4px;
   font-family: 'Inter Tight', sans-serif;
   margin-top: 206px;
+  justify-content: space-between;
 }
 
 .hero-list-item {
@@ -81,6 +83,19 @@
   bottom: -16px;
   left: -16px;
   right: -16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .lloyd-email {
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .hero-list {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
 
 @media screen and (min-width: 768px) {
