@@ -16,12 +16,13 @@ import { heroSection, backgroundImagesLaptop, backgroundImagesTablet, background
 import { isElementInViewport, addKeyframesAnimation } from "./js/covers"
 const element = document.querySelector(".covers");
 
-window.visualViewport.addEventListener("scroll", function () {
-    if (isElementInViewport(element)) {
-        
+window.addEventListener("scroll", () => {
+      if (isElementInViewport(element)) {
         addKeyframesAnimation();
     }
-});
+
+} );
+
 itemsAccordion();
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 SHOWACC;
@@ -77,11 +78,9 @@ headerMenuBtn.addEventListener('click', event => {
 
 // Js code for section "Covers"
 
-
 mobOrderBtn.addEventListener('click', event => {
   closeMenu();
 });
-
 
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
@@ -93,8 +92,3 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     });
   });
 });
-
-
-
-
-

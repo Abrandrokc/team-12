@@ -1,5 +1,7 @@
 let isAnimationAdded = false;
-export function isElementInViewport(el) {
+    
+
+  export  function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
         rect.bottom > 0 &&
@@ -22,4 +24,5 @@ export function addKeyframesAnimation() {
         isAnimationAdded = true;
     }
 }
+
 
