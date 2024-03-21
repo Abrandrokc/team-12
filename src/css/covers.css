@@ -3,7 +3,7 @@
   margin: 0 auto;
   height: 508px;
   overflow: hidden;
-
+width: 100%;
   background-image: url(../img/elements_vectors.png);
   background-size: cover;
   background-position: center center;
@@ -50,15 +50,11 @@
   height: 162px;
 }
 
-@media screen and (min-width: 375px) {
-  .covers {
-    width: 375px;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
   .covers {
-    width: 768px;
+   
     height: 960px;
   }
 
@@ -85,7 +81,7 @@
 
 @media screen and (min-width: 1440px) {
   .covers {
-    width: 1440px;
+    
     height: 960px;
   }
 
