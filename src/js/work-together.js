@@ -6,6 +6,7 @@ const buttonClose = document.querySelector(".button-close");
 const form = document.querySelector("form")
  const errorMessage = document.getElementById('email-error');
 
+ import axios from 'axios'
 let inputMail;
 let inputComment;
 
@@ -69,37 +70,28 @@ export async function submitForm(event) {
     formEmail.classList.remove('error');
 }
 
-async function sendDataToServer() {
+export async function sendDataToServer() {
     const formData = new FormData(form);
-     const dataToSend = {
+    const dataToSend = {
         "email": inputMail, 
         "comment": inputComment 
     };
 
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(dataToSend)
-    };
     try {
-        const response = await fetch('https://portfolio-js.b.goit.study/api/requests', options);
-        
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        
-        const responseData = await response.json();
-        console.log(responseData); 
+        const response = await axios.post('https://portfolio-js.b.goit.study/api/requests', dataToSend, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        console.log(response.data);
         backdrope.classList.add('is-open');
-        
     } catch (error) {
         console.error('Error:', error);
         alert('Error! Try again');
-        
-             }
+    }
 }
+
 
     
 export function backdropeClose(event) {
