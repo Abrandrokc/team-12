@@ -9,17 +9,20 @@ import { addAboutMeSwiper } from './js/aboutme';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import SHOWACC from './js/FAQ';
-import { heroSection, backgroundImages, change } from './js/hero';
+// import { heroSection, backgroundImages, change } from './js/hero';
+// import { importedImages, change } from './js/hero';
+import { heroSection, backgroundImagesLaptop, backgroundImagesTablet, backgroundImagesMobile, change } from './js/hero';
 
 import { isElementInViewport, addKeyframesAnimation } from "./js/covers"
 const element = document.querySelector(".covers");
 
-window.visualViewport.addEventListener("scroll", function () {
-    if (isElementInViewport(element)) {
-        
+window.addEventListener("scroll", () => {
+      if (isElementInViewport(element)) {
         addKeyframesAnimation();
     }
-});
+
+} );
+
 itemsAccordion();
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 SHOWACC;
@@ -75,11 +78,9 @@ headerMenuBtn.addEventListener('click', event => {
 
 // Js code for section "Covers"
 
-
 mobOrderBtn.addEventListener('click', event => {
   closeMenu();
 });
-
 
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
@@ -91,8 +92,3 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     });
   });
 });
-
-
-
-
-

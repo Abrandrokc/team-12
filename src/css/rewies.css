@@ -47,7 +47,7 @@
         letter-spacing: -0.02em;
         text-align: left;
         
-         height: 100%;
+       
         padding-top: 8px;
         padding-bottom: 32px;
         padding-left: 32px;
@@ -131,8 +131,10 @@ li.swiper-slide.review-slide{
 
 .reviews-icon {
     stroke: #FAFAFA;
+    fill:none
 }
 
 .reviews-icon-right {
     stroke: #FAFAFA;
+    fill: none;
 }

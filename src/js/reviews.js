@@ -24,7 +24,7 @@ export async function fetchData() {
 export async function renderSlide() {
     let data = await fetchData();
     if (data) {
-        const html = data.map(({ author, avatar_url, review }) => `<li class='swiper-slide  review-slide'>
+        const html = data.map(({ author, avatar_url, review }) => `<li class='swiper-slide  review-slide' style="box-sizing: border-box;">
             <img class="review-img" src="${avatar_url}" alt="${author}" />
             <h3 class="review-author">${author}</h3>
             <p class="review-text">${review}</p>
@@ -35,8 +35,9 @@ export async function renderSlide() {
         const swiperOptions = {
             modules: [Navigation, Keyboard, Mousewheel],
             initialSlide: 0,
-           width: 370,
+            slidesPerView: 1,
             spaceBetween: 16,
+           
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -46,8 +47,9 @@ export async function renderSlide() {
                 el: '.swiper-scrollbar',
             },
             breakpoints: {
-                
-                1440: {width: 332},
+                375: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1440: { slidesPerView: 4 },
             },
            
             hashNavigation: {

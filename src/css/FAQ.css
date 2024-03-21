@@ -1,4 +1,4 @@
-.faq-headline {
+#FAQ .faq-title {
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 16px;
@@ -66,7 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 4px 9px 3px 9px;
 }
 
 #FAQ .faq-arrow-btn.ac-trigger::after {
@@ -82,7 +82,8 @@
   padding-bottom: 0;
   padding-left: 0;
 }
-.faq-arrow-icon {
+
+#FAQ .faq-arrow-icon {
   stroke: #fafafa;
 }
 
@@ -98,6 +99,14 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
+}
+
+#FAQ .faq-item-headline {
+  max-width: 656px;
+}
+
+#FAQ .answer-question {
+  max-width: 656px;
 }
 
 /* =============== DESKTOP ===============*/
