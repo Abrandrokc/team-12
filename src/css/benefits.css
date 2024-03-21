@@ -1,6 +1,5 @@
 .section-benefits {
-  padding-left: 16px;
-  padding-right: 15px;
+  
   padding-top: 84px;
 }
 .benefits-title-section {
@@ -85,8 +84,7 @@
 }
 @media screen and (min-width: 768px) {
   .section-benefits {
-    padding-left: 32px;
-    padding-right: 32px;
+  
     padding-top: 96px;
   }
   .benefits-list {
@@ -97,25 +95,30 @@
   }
   .benefits-item {
     width: 344px;
-    flex-basis: calc ((100%-16px) / 2);
+  
   }
 }
 @media screen and (min-width: 1440px) {
   .section-benefits {
-    display: flex;
+    
     padding-top: 132px;
   }
+  .container-benefits{
+    display: flex;
+    width: 1376px;
+  }
   .benefits-desktop {
-    margin-left: auto;
+    width: calc(100% / 2);
   }
   .benefits-title-section {
     margin-bottom: 0px;
+      width: calc(100% / 2);
   }
   .benefits-list {
     max-width: 680px;
   }
   .benefits-item {
     width: 332px;
-    flex-basis: calc ((100%-16px) / 2);
+  
   }
 }
