@@ -85,6 +85,7 @@
 
 #FAQ .faq-arrow-icon {
   stroke: #fafafa;
+  fill: none;
 }
 
 /* =============== TABLET ===============*/

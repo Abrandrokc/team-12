@@ -84,7 +84,7 @@
 
 .lloyd-email {
   width: 174px;
-  /* height: 32px; */
+  height: 32px;
   border-radius: 60px;
   display: flex;
   justify-content: center;

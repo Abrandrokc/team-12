@@ -1,6 +1,6 @@
 .reviews{
-    margin-top: 81px;
-    margin-bottom: 81px;
+    padding-top: 64px;
+padding-bottom: 32px;
 }
 .reviews-h3{
 
@@ -141,4 +141,16 @@ li.swiper-slide.review-slide{
 .reviews-icon-right {
     stroke: #FAFAFA;
     fill: none;
+}
+@media screen and (min-width: 768px){
+    .reviews {
+            padding-top: 96px;
+            padding-bottom: 48px;
+        }
+}
+@media screen and (min-width: 1440px){
+    .reviews {
+            padding-top: 164px;
+            padding-bottom: 82px;
+        }
 }
