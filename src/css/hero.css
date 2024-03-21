@@ -1,8 +1,8 @@
 .section.hero {
   background-color: black;
   /* padding: 280px 16px 36px 16px; */
-  /* padding-top: 280px;
-  padding-bottom: 36px; */
+   padding-top: 300px;
+  padding-left: 32px;
   background-image: url(../img/Herocolor6-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -134,9 +134,9 @@
   }
 
   .section.hero {
-    /* padding: 300px 32px 32px 32px; */
-    /* padding-top: 300px;
-    padding-bottom: 32px; */
+     padding: 300px 32px 32px 32px; 
+     padding-top: 300px;
+    padding-bottom: 32px; 
     background-image: url(../img/Herocolor6-tablet.png);
   }
 
@@ -182,11 +182,11 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .section.hero {
     /* padding: 300px 32px 32px 178px; */
-    /* padding-top: 300px;
-    padding-bottom: 32px; */
+    padding-top: 280px;
+      padding-left: 178px;
     background-image: url(../img/Herocolor6.png);
   }
 
