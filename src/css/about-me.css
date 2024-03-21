@@ -128,7 +128,6 @@ li.info-item.ac .button-up-down {
   width: 260px;
   overflow: hidden;
   margin-top: 32px;
-  
 }
 
 .skills-slide {
@@ -148,26 +147,25 @@ li.info-item.ac .button-up-down {
 .skills-slide.swiper-slide-active {
   background-color: #ed3b44;
 }
-div.swiper-button-next.skills-button-next{
+div.swiper-button-next.skills-button-next {
   position: absolute;
- right: 0;
+  right: 0;
   width: 40px;
   height: 40px;
   bottom: 3.5%;
   z-index: 100;
-    overflow: hidden;
-    display: block;
-    top: auto;
-    
-    pointer-events: all;
-    opacity: inherit;
-   
-    margin: 0;
+  overflow: hidden;
+  display: block;
+  top: auto;
+
+  pointer-events: all;
+  opacity: inherit;
+
+  margin: 0;
 }
 .skills-button-next svg {
   stroke: #3b3b3b;
   fill: none;
-  
 }
 /* ================== /STYLES FOR MOBILE ================== */
 
@@ -207,9 +205,9 @@ div.swiper-button-next.skills-button-next{
     width: 200px !important;
     height: 200px !important;
   }
-        div.swiper-button-next.skills-button-next{
-      bottom:4.5%
-    }
+  div.swiper-button-next.skills-button-next {
+    bottom: 4.5%;
+  }
 }
 
 /* ================== STYLES FOR DESCTOP ================== */
@@ -251,14 +249,13 @@ div.swiper-button-next.skills-button-next{
     width: 100%;
     overflow: hidden;
     margin-top: 96px;
-    margin-left: 32px;
+    padding-left: 32px;
   }
-  .skills-button-next{
-      bottom:4.5%;
-      right: 0;
-      display: block;
-    }
-   
+  .skills-button-next {
+    bottom: 4.5%;
+    right: 0;
+    display: block;
+  }
 }
 
 /* ================== /STYLES FOR DESCTOP ================== */

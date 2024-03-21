@@ -78,6 +78,10 @@
   background-color: #242527;
   display: block;
 }
+.benefits-btn:hover,
+.benefits-btn:focus {
+  background-color: #ed3b44;
+}
 @media screen and (min-width: 375px) {
   .benefits-item {
     width: 344px;
@@ -104,6 +108,7 @@
   .section-benefits {
     display: flex;
     padding-top: 132px;
+    max-width: 1376px;
   }
   .benefits-desktop {
     margin-left: auto;
