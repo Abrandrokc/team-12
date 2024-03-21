@@ -29,19 +29,21 @@
 
     <nav class="header-nav">
       <div class="header-nav__wrap">
-        <button class="header-nav__menu" type="button">Menu</button>
+        <button class="header-nav__menu" type="button">
+          <span class="menu-btn__text">Menu</span>
+        </button>
         <ul class="header-list is-hidden">
           <li header-items>
-            <a class="header-link" href="./partials/about-me.html">About me</a>
+            <a class="header-link" href="#about-me">About me</a>
           </li>
           <li header-items>
-            <a class="header-link" href="./partials/benefits.html">Benefits</a>
+            <a class="header-link" href="#benefits">Benefits</a>
           </li>
           <li header-items>
-            <a class="header-link" href="./partials/projects.html">Projects</a>
+            <a class="header-link" href="#projects">Projects</a>
           </li>
           <li header-items>
-            <a class="header-link" href="./partials/FAQ.html">FAQ</a>
+            <a class="header-link" href="#FAQ">FAQ</a>
           </li>
         </ul>
       </div>
@@ -58,14 +60,37 @@
     </button>
   </div>
   <div class="mobile-menu">
-    <button class="menu-close" type="button">
-      <svg class="menu-close__svg" width="16" height="16">
-        <use href="../img/sprite.svg#icon-x"></use>
-      </svg>
-    </button>
-    <div class="markup"></div>
-    <button class="mobile-btn" type="button">
-      <a class="mobile-link" href="#section-work-together">Order the project</a>
-    </button>
+    <div class="mobile-wrap">
+      <div class="mobile-container__svg">
+        <button class="menu-close" type="button">
+          <svg class="menu-close__svg" width="16" height="16">
+            <use href="./img/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="markup">
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#about-me">About me</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#benefits">Benefits</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#projects">Projects</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-container__btn">
+        <button class="mobile-btn" type="button">
+          <a class="mobile-link" href="#section-work-together"
+            >Order the project</a
+          >
+        </button>
+      </div>
+    </div>
   </div>
 </header>

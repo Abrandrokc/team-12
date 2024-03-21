@@ -17,7 +17,7 @@ body {
   font-weight: 500;
   color: #fafafa;
   min-height: 100vh;
-  
+  width: 100%;
 }
 
 p:last-child {
@@ -48,6 +48,8 @@ img {
 @media screen and (min-width: 375px) {
   .section {
     max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {

@@ -2,20 +2,20 @@
   background-color: black;
   padding: 280px 16px 36px 16px;
   background-image: image-set(
-
-    url(/img/Herocolor6.png) 1x,
-    url(/img/Herocolor6@2x.png) 2x,
-    url(/img/Herocolor6@3x.png) 3x
-
+    url(../img/Herocolor6-mobile.png) 1x,
+    url(../img/Herocolor6-mobile@2x.png) 2x,
+    url(../img/Herocolor6-mobile@3x.png) 3x
   );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
- 
+  transition: 2s ease-in-out;
 }
-.hero{
+
+.hero {
   position: relative;
 }
+
 .hero-header {
   font-family: 'Inter Tight', sans-serif;
   font-size: 50px;
@@ -42,8 +42,8 @@
 .lloyd-social {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -90,6 +90,11 @@
 
   .section.hero {
     padding: 300px 32px 32px 32px;
+    background-image: image-set(
+      url(../img/Herocolor6-tablet.png) 1x,
+      url(../img/Herocolor6-tablet@2x.png) 2x,
+      url(../img/Herocolor6-tablet@3x.png) 3x
+    );
   }
 
   .hero-header {
@@ -118,6 +123,11 @@
 @media screen and (min-width: 1280px) {
   .section.hero {
     padding: 300px 32px 32px 178px;
+    background-image: image-set(
+      url(../img/Herocolor6.png) 1x,
+      url(../img/Herocolor6@2x.png) 2x,
+      url(../img/Herocolor6@3x.png) 3x
+    );
   }
 
   .hero-list {

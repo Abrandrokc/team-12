@@ -35,30 +35,32 @@ export async function renderSlide() {
         const swiperOptions = {
             modules: [Navigation, Keyboard, Mousewheel],
             initialSlide: 0,
-            slidesPerView: 1,
+           width: 370,
             spaceBetween: 16,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+                onlyInViewport: true,
             },
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
             breakpoints: {
-                375: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1440: { slidesPerView: 4 },
+                
+                1440: {width: 332},
             },
            
             hashNavigation: {
                 watchState: true,
+                onlyInViewport: true,
             },
             keyboard: {
                 enabled: true,
                 onlyInViewport: true,
             },
            mousewheel: {
-    invert: true,
+               invert: true,
+               onlyInViewport: true,
   },
             
         };

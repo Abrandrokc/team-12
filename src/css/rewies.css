@@ -52,8 +52,9 @@
         padding-bottom: 32px;
         padding-left: 32px;
 }
-.review-slide{
+li.swiper-slide.review-slide{
     border: 1px solid #FAFAFA33;
+    border-radius: 20px;
     width: 332px; 
     height: 302px; 
     
