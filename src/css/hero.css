@@ -1,20 +1,40 @@
 .section.hero {
   background-color: black;
-  padding: 280px 16px 36px 16px;
-  background-image: image-set(
-    url(../img/Herocolor6-mobile.png) 1x,
-    url(../img/Herocolor6-mobile@2x.png) 2x,
-    url(../img/Herocolor6-mobile@3x.png) 3x
-  );
+  /* padding: 280px 16px 36px 16px; */
+  /* padding-top: 280px;
+  padding-bottom: 36px; */
+  background-image: url(../img/Herocolor6-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transition: 2s ease-in-out;
+}
 
+.hero-container {
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 280px 0 36px 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section.hero {
+    background-image: url(../img/Herocolor6-mobile@2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  .section.hero {
+    background-image: url(../img/Herocolor6-mobile@3x.png);
+  }
 }
 
 .hero {
   position: relative;
+}
+
+.hero-header-container {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-header {
@@ -26,6 +46,13 @@
   text-align: left;
   letter-spacing: -0.03em;
   color: #fafafa;
+  margin-left: 16px;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* margin-left: 16px;
+  margin-right: 16px; */
+  /* margin: 280px 16px 36px 16px; */
 }
 
 .hero-list {
@@ -36,6 +63,8 @@
   font-family: 'Inter Tight', sans-serif;
   margin-top: 206px;
   justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .hero-list-item {
@@ -55,7 +84,7 @@
 
 .lloyd-email {
   width: 174px;
-  height: 32x;
+  /* height: 32px; */
   border-radius: 60px;
   display: flex;
   justify-content: center;
@@ -105,20 +134,25 @@
   }
 
   .section.hero {
-    padding: 300px 32px 32px 32px;
-    background-image: image-set(
-      url(../img/Herocolor6-tablet.png) 1x,
-      url(../img/Herocolor6-tablet@2x.png) 2x,
-      url(../img/Herocolor6-tablet@3x.png) 3x
-    );
+    /* padding: 300px 32px 32px 32px; */
+    /* padding-top: 300px;
+    padding-bottom: 32px; */
+    background-image: url(../img/Herocolor6-tablet.png);
+  }
+
+  .hero-container {
+    padding: 300px 0 32px 0;
+    max-width: 768px;
   }
 
   .hero-header {
     font-size: 90px;
+    margin-left: 32px;
   }
 
   .hero-list {
     margin-top: 188px;
+    margin-right: 32px;
   }
 
   .lloyd-social {
@@ -136,14 +170,36 @@
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section.hero {
+    background-image: url(../img/Herocolor6-tablet@2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  .section.hero {
+    background-image: url(../img/Herocolor6-tablet@3x.png);
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .section.hero {
-    padding: 300px 32px 32px 178px;
-    background-image: image-set(
-      url(../img/Herocolor6.png) 1x,
-      url(../img/Herocolor6@2x.png) 2x,
-      url(../img/Herocolor6@3x.png) 3x
-    );
+    /* padding: 300px 32px 32px 178px; */
+    /* padding-top: 300px;
+    padding-bottom: 32px; */
+    background-image: url(../img/Herocolor6.png);
+  }
+
+  .hero-container {
+    padding: 300px 0 32px 0;
+    max-width: 1440px;
+  }
+
+  .hero-header {
+    /* margin-left: 178px;
+    margin-right: 178px; */
+    margin: 0;
+    /* text-align: center; */
   }
 
   .hero-list {
@@ -152,5 +208,17 @@
 
   .hero-list {
     gap: 8px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section.hero {
+    background-image: url(../img/Herocolor6@2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  .section.hero {
+    background-image: url(../img/Herocolor6@3x.png);
   }
 }
