@@ -27,33 +27,24 @@ export async function addAboutMeSwiper() {
 
     navigation: {
       nextEl: '.skills-button-next',
-      prevEl: '.skills-button-prev',
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      onlyInViewport: true,
     },
     breakpoints: {
       375: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
-      1440: { slidesPerView: 6 },
+      1440: {
+        slidesPerView: 6,
+      },
     },
     mousewheel: {
       invert: true,
     },
     loop: true,
+    loopAddBlankSlides: 1,
   });
 
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'Tab') {
-      event.preventDefault();
-      swiper.slideNext();
-    }
-    if (event.key === 'ArrowRight') {
-      swiper.slideNext();
-    }
-    if (event.key === 'ArrowLeft') {
-      swiper.slidePrev();
-    }
-  });
+  
 }
