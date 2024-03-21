@@ -498,14 +498,20 @@ export function change() {
     }
 
     const currentImage = resolution[i]; 
+    const nextIndex = (i + 1) % resolution.length;
+    const nextImage = resolution[nextIndex];
 
-    setTimeout(() => {
-        heroSection.style.backgroundImage = `url(${currentImage})`;
-        heroSection.style.opacity = 1;
-    }, 500);
+    const tempImg = new Image();
+    tempImg.src = nextImage;
 
-    i = (i + 1) % resolution.length;
+    tempImg.onload = function() {
+        setTimeout(() => {
+            heroSection.style.backgroundImage = `url(${nextImage})`;
+            heroSection.style.opacity = 1;
+        }, 500);
+    };
+
+    i = nextIndex;
 }
 
-setInterval(change, 5000);
-
+setInterval(change, 4000);
