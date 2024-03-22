@@ -1,8 +1,8 @@
 
 
 .secthion-project{
-  padding-top: 32px;
-    padding-bottom: 32px;
+  padding-top: 64px;
+    padding-bottom: 64px;
 }
 .projects-container {
   margin: 0 auto;
@@ -168,8 +168,8 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
    
   }
 .secthion-project {
-  padding-top: 48px;
-    padding-bottom: 48px;
+  padding-top: 96px;
+    padding-bottom: 96px;
 }
   .projects-list-item {
     min-width: 704px;
@@ -224,21 +224,17 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 @media screen and (min-width: 1440px) {
   .projects-container {
     max-width: 1440px;
-
+    padding: 164px 0;
   }
-.secthion-project {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
 
-.proje
   .projects-list-item.swiper-slide {
     display: flex;
     min-width: 1376px;
   }
 
   .project-description-part {
-    border-radius: 24px 0 0 24px;
+    
+    width: calc(100% / 2);
   }
 
   .project-image-part {

@@ -104,6 +104,10 @@
   letter-spacing: -0.02em;
   line-height: 1.24;
   position: relative;
+  
+}
+.hero-list{
+  padding-bottom: 35px;
 }
 
 .hero-list-link::after {
@@ -115,7 +119,7 @@
   right: -16px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   .lloyd-email {
     margin-top: 10px;
     padding-top: 8px;
@@ -125,6 +129,7 @@
   .hero-list {
     justify-content: flex-end;
     align-items: flex-end;
+   margin-bottom: 32px;
   }
 }
 
