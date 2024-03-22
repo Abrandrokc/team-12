@@ -224,7 +224,7 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 @media screen and (min-width: 1440px) {
   .projects-container {
     max-width: 1440px;
-    padding: 164px 0;
+    
   }
 
   .projects-list-item.swiper-slide {
