@@ -7,6 +7,9 @@
   align-items: center;
   position: relative;
 }
+.about-conteiner{
+  position: relative;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -153,7 +156,8 @@ div.swiper-button-next.skills-button-next{
  right: 0;
   width: 40px;
   height: 40px;
-  bottom: 3.5%;
+  bottom: 2%;
+  right: 16px;
   z-index: 100;
     overflow: hidden;
     display: block;
@@ -174,6 +178,9 @@ div.swiper-button-next.skills-button-next{
 /* ================== STYLES FOR TABLET ================== */
 
 @media screen and (min-width: 768px) {
+  .about-me{
+    padding-bottom: 48px;
+  }
   .title-with-photo {
     margin-bottom: 64px;
   }
@@ -208,7 +215,8 @@ div.swiper-button-next.skills-button-next{
     height: 200px !important;
   }
         div.swiper-button-next.skills-button-next{
-      bottom:4.5%
+      bottom:3.5%;
+      right: 32px;
     }
 }
 
@@ -217,6 +225,9 @@ div.swiper-button-next.skills-button-next{
 @media screen and (min-width: 1440px) {
   .about-me {
     padding-top: 96px;
+    
+        padding-bottom: 96px;
+      
   }
   .title-with-photo {
     display: flex;

@@ -1,10 +1,13 @@
 
 
-
+.secthion-project{
+  padding-top: 32px;
+    padding-bottom: 32px;
+}
 .projects-container {
   margin: 0 auto;
   max-width: 375px;
-  padding: 64px 0;
+  
 }
 
 .projects-list-item.visually-hidden {
@@ -162,9 +165,12 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 @media screen and (min-width: 768px) {
   .projects-container {
     max-width: 768px;
-    padding: 96px 0;
+   
   }
-
+.secthion-project {
+  padding-top: 48px;
+    padding-bottom: 48px;
+}
   .projects-list-item {
     min-width: 704px;
   }
@@ -218,9 +224,14 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 @media screen and (min-width: 1440px) {
   .projects-container {
     max-width: 1440px;
-    padding: 164px 0;
-  }
 
+  }
+.secthion-project {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.proje
   .projects-list-item.swiper-slide {
     display: flex;
     min-width: 1376px;

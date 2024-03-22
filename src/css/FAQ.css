@@ -24,8 +24,8 @@
 }
 
 .faq-section {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 64px;
 }
 
 .faq-item .faq-arrow-icon {
@@ -92,8 +92,8 @@
 
 @media screen and (min-width: 768px) {
   .faq-section {
-    margin-top: 48px;
-    margin-bottom: 48px;
+  padding-top: 48px;
+    padding-bottom: 96px;
   }
 
   #FAQ .faq-item {
@@ -114,8 +114,8 @@
 
 @media screen and (min-width: 1440px) {
   .faq-section {
-    margin-top: 82px;
-    margin-bottom: 82px;
+  padding-top: 96px;
+  padding-bottom:164px;
   }
 
   .faq-list {
