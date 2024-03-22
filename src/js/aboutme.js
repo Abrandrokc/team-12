@@ -43,7 +43,7 @@ export async function addAboutMeSwiper() {
       invert: true,
     },
     loop: true,
-    loopAddBlankSlides: 1,
+   
   });
 
   

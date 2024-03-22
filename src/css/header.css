@@ -6,19 +6,17 @@
     pointer-events: none;
   }
 
-.header-container {
-  position: absolute;
-  padding: 0 15px;
-  top: 32px;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1000;
-}
+
 
 .header{
-  position: relative;
+  position: absolute;
+  padding: 0 15px;
+    top: 32px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
 }
   .header-logo__container {
     display: flex;
@@ -64,9 +62,7 @@
  }
 
   @media screen and (min-width: 375px) {
-    .section {
-      max-width: 375px;
-    }
+   
     
 
   .header-container {
@@ -114,9 +110,7 @@ stroke: #FAFAFA;
 
   /* TABLET */
   @media screen and (min-width: 768px) {
-    .section {
-      max-width: 768px;
-    }
+   
 
 
 .header-container {
@@ -223,9 +217,7 @@ background-color: #ED3B44;
 
     /* DESKTOP */
   @media screen and (min-width: 1440px) {
-    .section {
-      max-width: 1440px;
-    }
+   
 
   .header-container {
     position: absolute;
