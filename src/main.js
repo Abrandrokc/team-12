@@ -11,7 +11,7 @@ import 'accordion-js/dist/accordion.min.css';
 import SHOWACC from './js/FAQ';
 // import { heroSection, backgroundImages, change } from './js/hero';
 // import { importedImages, change } from './js/hero';
-import { heroSection, backgroundImagesLaptop, backgroundImagesTablet, backgroundImagesMobile, change } from './js/hero';
+//import { heroSection, backgroundImagesLaptop, backgroundImagesTablet, backgroundImagesMobile, change } from './js/hero';
 
 import { isElementInViewport, addKeyframesAnimation } from "./js/covers"
 const element = document.querySelector(".covers");
