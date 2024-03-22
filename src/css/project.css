@@ -234,7 +234,7 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 
   .project-description-part {
     
-    width: calc(100% / 2);
+    width: calc(1376 / 2);
   }
 
   .project-image-part {
