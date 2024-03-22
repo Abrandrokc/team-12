@@ -124,6 +124,7 @@ export const backgroundImagesMobile = [
     Herocolor_mobile_3x
 ];
 
+
 let i = 0;
 
 export function change() {
@@ -131,14 +132,14 @@ export function change() {
 
     let resolution;
     if (window.innerWidth >= 1440) {
-        resolution = backgroundImagesLaptop;
+        resolution = backgroundImages.laptop;
     } else if (window.innerWidth >= 768) {
-        resolution = backgroundImagesTablet;
+        resolution = backgroundImages.tablet;
     } else {
-        resolution = backgroundImagesMobile;
+        resolution = backgroundImages.mobile;
     }
 
-    const currentImage = resolution[i]; 
+    const currentImage = resolution[i];
     const nextIndex = (i + 1) % resolution.length;
     const nextImage = resolution[nextIndex];
 
