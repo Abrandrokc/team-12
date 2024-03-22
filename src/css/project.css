@@ -1,8 +1,8 @@
 
 
 .secthion-project{
-  padding-top: 64px;
-    padding-bottom: 64px;
+  padding-top: 32px;
+    padding-bottom: 32px;
 }
 .projects-container {
   margin: 0 auto;
@@ -168,8 +168,8 @@ color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
    
   }
 .secthion-project {
-  padding-top: 96px;
-    padding-bottom: 96px;
+  padding-top: 48px;
+    padding-bottom: 48px;
 }
   .projects-list-item {
     min-width: 704px;
